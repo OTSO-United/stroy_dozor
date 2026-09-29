@@ -1,0 +1,3 @@
+:80 {
+    respond "Public access is not configured for this repository." 503
+}

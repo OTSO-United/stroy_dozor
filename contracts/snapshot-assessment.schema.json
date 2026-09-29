@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Snapshot assessment v0.2 — design contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "scope", "id", "project_id", "media_id", "observation_id", "run_id", "binding_version", "context", "rule_bundle_version", "captured_at", "mode", "readiness", "observed_machine_seconds", "findings", "unknown_checks", "limitations", "synthetic"],
+  "properties": {
+    "schema_version": {"const": "0.2"},
+    "scope": {"const": "snapshot"},
+    "id": {"type": "string", "minLength": 1},
+    "project_id": {"type": "string", "minLength": 1},
+    "media_id": {"type": "string", "minLength": 1},
+    "observation_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "binding_version": {"type": ["string", "null"]},
+    "rule_bundle_version": {"type": ["string", "null"]},
+    "captured_at": {"type": ["string", "null"], "format": "date-time"},
+    "mode": {"enum": ["sparse_snapshots", "insufficient_data"]},
+    "readiness": {"enum": ["ready", "partial", "not_evaluated"]},
+    "observed_machine_seconds": {"type": "null"},
+    "synthetic": {"type": "boolean"},
+    "context": {
+      "type": "object", "additionalProperties": false,
+      "required": ["basis", "version", "complete_work_set", "work_ids"],
+      "properties": {
+        "basis": {"enum": ["manual_scenario", "schedule", "unknown"]},
+        "version": {"type": ["string", "null"]},
+        "complete_work_set": {"type": "boolean"},
+        "work_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+      }
+    },
+    "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+    "unknown_checks": {"type": "array", "items": {"$ref": "#/$defs/unknown"}},
+    "limitations": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+  },
+  "$defs": {
+    "finding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "type", "equipment_class", "work_ids", "rule_version", "premises", "explanation", "evidence"],
+      "properties": {
+        "id": {"type": "string"},
+        "type": {"enum": ["potential_missing", "potential_unexpected"]},
+        "equipment_class": {"type": "string"},
+        "work_ids": {"type": "array", "items": {"type": "string"}},
+        "rule_version": {"type": "string"},
+        "premises": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "explanation": {"type": "string", "minLength": 1},
+        "evidence": {
+          "type": "object", "additionalProperties": false,
+          "required": ["media_id", "kind", "reference_id"],
+          "properties": {
+            "media_id": {"type": "string"},
+            "kind": {"enum": ["view_region", "detection"]},
+            "reference_id": {"type": "string"}
+          }
+        }
+      }
+    },
+    "unknown": {
+      "type": "object", "additionalProperties": false,
+      "required": ["check", "reason"],
+      "properties": {"check": {"type": "string"}, "reason": {"type": "string"}}
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"readiness": {"const": "not_evaluated"}}},
+      "then": {"properties": {"findings": {"maxItems": 0}, "unknown_checks": {"minItems": 1}}}
+    },
+    {
+      "if": {"properties": {"context": {"properties": {"basis": {"const": "unknown"}}}}},
+      "then": {"properties": {"readiness": {"const": "not_evaluated"}, "context": {"properties": {"version": {"type": "null"}, "complete_work_set": {"const": false}}}}}
+    },
+    {
+      "if": {"properties": {"readiness": {"enum": ["ready", "partial"]}}},
+      "then": {"properties": {"binding_version": {"type": "string", "minLength": 1}, "rule_bundle_version": {"type": "string", "minLength": 1}, "context": {"properties": {"basis": {"enum": ["manual_scenario", "schedule"]}, "version": {"type": "string", "minLength": 1}}}}}
+    },
+    {
+      "if": {"properties": {"context": {"properties": {"basis": {"const": "schedule"}}}, "readiness": {"enum": ["ready", "partial"]}}},
+      "then": {"properties": {"captured_at": {"type": "string", "format": "date-time"}}}
+    }
+  ]
+}

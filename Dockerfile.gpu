@@ -1,0 +1,6 @@
+ARG CPU_IMAGE=stroykontur:local
+FROM ${CPU_IMAGE}
+USER root
+COPY backend/requirements-gpu.txt /tmp/requirements-gpu.txt
+RUN pip uninstall -y onnxruntime && pip install --no-cache-dir -r /tmp/requirements-gpu.txt
+USER stroy

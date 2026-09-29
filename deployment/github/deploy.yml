@@ -1,0 +1,72 @@
+# Install as .github/workflows/deploy.yml in the PRIVATE deployment repository.
+name: Deploy local server
+on:
+  repository_dispatch:
+    types: [verified-main]
+  workflow_dispatch:
+    inputs:
+      sha:
+        description: Exact source SHA
+        required: true
+      runId:
+        description: Successful source main push CI run ID
+        required: true
+permissions:
+  contents: read
+jobs:
+  verify:
+    if: vars.CD_ENABLED == 'true' && github.event.repository.private == true && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      sha: ${{ steps.gate.outputs.sha }}
+      runId: ${{ steps.gate.outputs.runId }}
+      runNumber: ${{ steps.gate.outputs.runNumber }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+      - id: gate
+        run: node scripts/cd/github-gate.mjs
+        env:
+          SOURCE_READ_TOKEN: ${{ secrets.SOURCE_READ_TOKEN }}
+  deploy:
+    needs: verify
+    runs-on: [self-hosted, Windows, X64, stroykontur-deploy]
+    timeout-minutes: 180
+    # Repository-level variables/secrets also work for private repositories on Free.
+    # Access to this repository (and its runner), not an environment, is the boundary.
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.sha }}
+          path: controller
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+      - name: Revalidate CI after waiting for local runner
+        shell: powershell
+        run: node ./controller/scripts/cd/github-gate.mjs
+        env:
+          SOURCE_READ_TOKEN: ${{ secrets.SOURCE_READ_TOKEN }}
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          repository: OTSO-United/stroikontur-source
+          ref: ${{ needs.verify.outputs.sha }}
+          token: ${{ secrets.SOURCE_READ_TOKEN }}
+          path: source
+          persist-credentials: false
+      - name: Build, update and verify exact commit
+        shell: powershell
+        env:
+          RELEASE_SHA: ${{ needs.verify.outputs.sha }}
+          CI_RUN_ID: ${{ needs.verify.outputs.runId }}
+          CI_RUN_NUMBER: ${{ needs.verify.outputs.runNumber }}
+          CD_CONFIG: ${{ vars.CD_CONFIG }}
+        run: |
+          & ./controller/scripts/cd/deploy-verified.ps1 -SourceRoot (Join-Path $env:GITHUB_WORKSPACE 'source') -ConfigPath $env:CD_CONFIG -Sha $env:RELEASE_SHA -RunId $env:CI_RUN_ID -RunNumber $env:CI_RUN_NUMBER

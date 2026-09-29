@@ -1,0 +1,127 @@
+# Install in the PRIVATE controller repository, not the source repository.
+name: Deploy with migrations
+on:
+  workflow_dispatch:
+    inputs:
+      sha:
+        description: Full source SHA with successful push/main CI
+        required: true
+        type: string
+      runId:
+        description: Source CI run ID (not delivery/deployment run)
+        required: true
+        type: string
+      expectedRevision:
+        description: Expected current revision
+        required: true
+        default: '003'
+        type: string
+      targetRevision:
+        description: Reviewed target revision
+        required: true
+        default: '004'
+        type: string
+      mode:
+        description: Check does not stop or migrate production
+        required: true
+        default: check
+        type: choice
+        options: [check, release, recover]
+      operationId:
+        description: Recovery only - operation ID from the failed run summary
+        required: false
+        type: string
+      recoveryAction:
+        description: Recovery only - resume preferred; never restores a DB dump
+        required: true
+        default: resume
+        type: choice
+        options: [resume, restore-previous]
+permissions:
+  contents: read
+jobs:
+  verify:
+    if: >-
+      github.repository == 'OTSO-United/stroykontur-deployment' &&
+      github.event.repository.private == true && github.ref == 'refs/heads/main' &&
+      (inputs.mode != 'release' || (vars.CD_ENABLED == 'true' && vars.MIGRATIONS_ENABLED == 'true'))
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      sha: ${{ steps.gate.outputs.sha }}
+      runId: ${{ steps.gate.outputs.runId }}
+      runNumber: ${{ steps.gate.outputs.runNumber }}
+      expectedRevision: ${{ steps.gate.outputs.expectedRevision }}
+      targetRevision: ${{ steps.gate.outputs.targetRevision }}
+      mode: ${{ steps.gate.outputs.mode }}
+      operationId: ${{ steps.gate.outputs.operationId }}
+      recoveryAction: ${{ steps.gate.outputs.recoveryAction }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+      - id: gate
+        run: node scripts/cd/migration-gate.mjs
+        env:
+          SOURCE_READ_TOKEN: ${{ secrets.SOURCE_READ_TOKEN }}
+  migrate:
+    needs: verify
+    runs-on: [self-hosted, Windows, X64, stroykontur-deploy]
+    timeout-minutes: 180
+    # No concurrency cancellation: shared deployment.lock and durable pending own recovery.
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.sha }}
+          path: controller
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+      - name: Revalidate exact source CI after waiting for the Windows runner
+        shell: powershell
+        run: node ./controller/scripts/cd/migration-gate.mjs
+        env:
+          SOURCE_READ_TOKEN: ${{ secrets.SOURCE_READ_TOKEN }}
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          repository: OTSO-United/stroikontur-source
+          ref: ${{ needs.verify.outputs.sha }}
+          token: ${{ secrets.SOURCE_READ_TOKEN }}
+          path: source
+          persist-credentials: false
+      - name: Check, release or recover reviewed migration
+        id: migration
+        shell: powershell
+        env:
+          RELEASE_SHA: ${{ needs.verify.outputs.sha }}
+          CI_RUN_ID: ${{ needs.verify.outputs.runId }}
+          CI_RUN_NUMBER: ${{ needs.verify.outputs.runNumber }}
+          CONTROLLER_SHA: ${{ github.sha }}
+          EXPECTED_REVISION: ${{ needs.verify.outputs.expectedRevision }}
+          TARGET_REVISION: ${{ needs.verify.outputs.targetRevision }}
+          MIGRATION_MODE: ${{ needs.verify.outputs.mode }}
+          OPERATION_ID: ${{ needs.verify.outputs.operationId }}
+          RECOVERY_ACTION: ${{ needs.verify.outputs.recoveryAction }}
+          CD_CONFIG: ${{ vars.CD_CONFIG }}
+        run: |
+          & ./controller/scripts/cd/deploy-migrations.ps1 -ConfigPath $env:CD_CONFIG -SourceRoot (Join-Path $env:GITHUB_WORKSPACE 'source') -Sha $env:RELEASE_SHA -RunId $env:CI_RUN_ID -RunNumber $env:CI_RUN_NUMBER -ControllerSha $env:CONTROLLER_SHA -ExpectedRevision $env:EXPECTED_REVISION -TargetRevision $env:TARGET_REVISION -Mode $env:MIGRATION_MODE -OperationId $env:OPERATION_ID -RecoveryAction $env:RECOVERY_ACTION
+      - name: Operation summary even after failure or cancellation
+        if: always()
+        shell: powershell
+        env:
+          CD_CONFIG: ${{ vars.CD_CONFIG }}
+          OPERATION_ID: ${{ steps.migration.outputs.operationId }}
+          REQUESTED_OPERATION_ID: ${{ needs.verify.outputs.operationId }}
+          RELEASE_SHA: ${{ needs.verify.outputs.sha }}
+          CI_RUN_ID: ${{ needs.verify.outputs.runId }}
+          CONTROLLER_SHA: ${{ github.sha }}
+          MIGRATION_OUTCOME: ${{ steps.migration.outcome }}
+        run: |
+          $id = $env:OPERATION_ID
+          if (!$id) { $id = $env:REQUESTED_OPERATION_ID }
+          & ./controller/scripts/cd/write-migration-summary.ps1 -ConfigPath $env:CD_CONFIG -OperationId $id -Sha $env:RELEASE_SHA -RunId $env:CI_RUN_ID -ControllerSha $env:CONTROLLER_SHA -Outcome $env:MIGRATION_OUTCOME

@@ -1,0 +1,8 @@
+{
+  "ProjectName": "stroykontur",
+  "StateRoot": "C:/StroyKontur/deployment/state",
+  "RuntimeRoot": "C:/StroyKontur/deployment/runtime",
+  "ModelDirectory": "C:/StroyKontur/deployment/model",
+  "ExpectedModelSha256": "0e444eeedc012c8c24748ca9feff5df3aee55fb12d687b9568ac9ea66dfdd301",
+  "HealthUrl": "http://127.0.0.1:8080"
+}

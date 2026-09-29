@@ -1,0 +1,89 @@
+name: stroykontur
+x-runtime: &runtime
+  image: ${CPU_IMAGE:-stroykontur:local}
+  build:
+    context: .
+    args:
+      NODE_IMAGE: ${NODE_IMAGE:-node:24-alpine}
+      PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.12-slim-bookworm}
+  restart: unless-stopped
+  init: true
+  environment: &env
+    DATABASE_URL: postgresql+psycopg://stroy:${POSTGRES_PASSWORD:-local-demo-only}@db:5432/stroy
+    STROY_DATA_DIR: /data
+    MODEL_MANIFEST: ${MODEL_MANIFEST-/models/yolo26m/manifest.json}
+    WORKER_THREADS: ${WORKER_THREADS:-20}
+    GEOCODER_REVERSE_URL: ${GEOCODER_REVERSE_URL-https://photon.komoot.io/reverse}
+    GEOCODER_SEARCH_URL: ${GEOCODER_SEARCH_URL-https://photon.komoot.io/api}
+  volumes:
+    - media:/data
+services:
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    profiles: [public]
+
+    ports:
+      - "80:80"
+      - "443:443"
+
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+    depends_on:
+      api:
+        condition: service_healthy
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: stroy
+      POSTGRES_USER: stroy
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-demo-only}
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U stroy -d stroy"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  api:
+    <<: *runtime
+    ports:
+      - "127.0.0.1:${APP_PORT:-8080}:8000"
+    expose:
+      - "8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import json, urllib.request; h=json.load(urllib.request.urlopen('http://127.0.0.1:8000/api/v1/health', timeout=3)); assert h['status']=='ok' and h['model']['ready'], h",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+  worker:
+    <<: *runtime
+    command: ["python", "-m", "app.worker"]
+    depends_on:
+      api:
+        condition: service_healthy
+  monitor:
+    <<: *runtime
+    command: ["python", "-m", "app.monitor"]
+    depends_on:
+      api:
+        condition: service_healthy
+volumes:
+  postgres:
+  media:
+  caddy_data:
+  caddy_config:

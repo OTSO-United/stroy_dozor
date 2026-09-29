@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EvidenceWindowV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "project_id", "zone_version_id", "run_id", "equipment_class", "start", "end", "revision", "mode", "expected_samples", "usable_samples", "coverage_ratio", "presence_sample_ratio", "observed_machine_seconds", "evidence_ids", "limitations", "synthetic"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "id": {"type": "string", "minLength": 1},
+    "project_id": {"type": "string", "minLength": 1},
+    "zone_version_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "equipment_class": {"type": "string", "minLength": 1},
+    "start": {"type": "string", "format": "date-time"},
+    "end": {"type": "string", "format": "date-time"},
+    "revision": {"type": "integer", "minimum": 1},
+    "mode": {"enum": ["dense_video", "sparse_snapshots", "insufficient_data"]},
+    "expected_samples": {"type": ["integer", "null"], "minimum": 1},
+    "usable_samples": {"type": "integer", "minimum": 0},
+    "coverage_ratio": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "presence_sample_ratio": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "observed_machine_seconds": {"type": ["number", "null"], "minimum": 0},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "limitations": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "synthetic": {"type": "boolean"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"mode": {"enum": ["sparse_snapshots", "insufficient_data"]}}},
+      "then": {"properties": {"observed_machine_seconds": {"type": "null"}}}
+    },
+    {
+      "if": {"properties": {"mode": {"const": "insufficient_data"}}},
+      "then": {"properties": {"presence_sample_ratio": {"type": "null"}}}
+    },
+    {
+      "if": {"properties": {"usable_samples": {"const": 0}}},
+      "then": {"properties": {"presence_sample_ratio": {"type": "null"}}}
+    },
+    {
+      "if": {"properties": {"expected_samples": {"type": "null"}}},
+      "then": {"properties": {"coverage_ratio": {"type": "null"}}}
+    }
+  ]
+}

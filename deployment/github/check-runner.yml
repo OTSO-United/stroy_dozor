@@ -1,0 +1,19 @@
+# Install as .github/workflows/check-runner.yml in the PRIVATE deployment repository.
+name: Check local runner
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    if: github.event.repository.private == true && github.ref == 'refs/heads/main'
+    runs-on: [self-hosted, Windows, X64, stroykontur-deploy]
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Verify account, Docker, Compose and real CUDA inference
+        shell: powershell
+        run: ./scripts/cd/check-runner.ps1

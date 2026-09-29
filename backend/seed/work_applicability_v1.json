@@ -1,0 +1,5169 @@
+{
+  "source": {
+    "file": "Сводный перечень строительных работ_ЛТЦ.xlsx",
+    "sha256": "82beeb771b5d24bd3fc7323a34f35808dce0c3f396498303a3dd9b9d7f860e3a",
+    "sheet": "Лист1",
+    "range": "A4:K380"
+  },
+  "project_types": [
+    {
+      "id": "housing",
+      "name": "Жильё"
+    },
+    {
+      "id": "education",
+      "name": "Образование"
+    },
+    {
+      "id": "healthcare",
+      "name": "Здравоохранение"
+    },
+    {
+      "id": "sport",
+      "name": "Спорт"
+    },
+    {
+      "id": "culture",
+      "name": "Культура"
+    },
+    {
+      "id": "administration",
+      "name": "Административные здания"
+    },
+    {
+      "id": "preschool",
+      "name": "ДОУ"
+    },
+    {
+      "id": "office",
+      "name": "Офисно-деловой центр"
+    },
+    {
+      "id": "roads",
+      "name": "Дороги"
+    }
+  ],
+  "works": [
+    {
+      "code": "10",
+      "title": "Подготовка территории",
+      "source_row": 4,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.1",
+      "title": "Отселение домов в пятне застройки",
+      "source_row": 5,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.2",
+      "title": "Вынос инженерных систем из пятна застройки (ЦТП/ТП/сети)",
+      "source_row": 6,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.2.1",
+      "title": "Вынос сетей: теплосеть (ЦТП)",
+      "source_row": 7,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.2.2",
+      "title": "Вынос сетей: теплосеть (сети)",
+      "source_row": 8,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.2.3",
+      "title": "Вынос сетей: теплосеть",
+      "source_row": 9,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.2.4",
+      "title": "Вынос сетей: водоснабжение",
+      "source_row": 10,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.2.5",
+      "title": "Вынос сетей: Х/Б канализация",
+      "source_row": 11,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.2.6",
+      "title": "Вынос сетей: ливневая канализация",
+      "source_row": 12,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.2.7",
+      "title": "Вынос сетей: газоснабжение",
+      "source_row": 13,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.2.8",
+      "title": "Вынос сетей: электроснабжение (ТП)",
+      "source_row": 14,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.2.9",
+      "title": "Вынос сетей: электроснабжение (сети)",
+      "source_row": 15,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.2.10",
+      "title": "Вынос сетей: электроснабжение",
+      "source_row": 16,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.2.11",
+      "title": "Вынос сетей: сети связи (КП МПТЦ)",
+      "source_row": 17,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.2.12",
+      "title": "Вынос сетей: сети связи",
+      "source_row": 18,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.3",
+      "title": "Снос домов в пятне застройки",
+      "source_row": 19,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.4",
+      "title": "Снос нежилых объектов в пятне застройки",
+      "source_row": 20,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.5",
+      "title": "Вырубка зеленых насаждений",
+      "source_row": 21,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.6",
+      "title": "Пересадка зеленых насождений",
+      "source_row": 22,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.7",
+      "title": "Проверка посадки здания",
+      "source_row": 23,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.8",
+      "title": "Демонтаж ж/б перекрытий",
+      "source_row": 24,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.9",
+      "title": "Погрузка строительного мусора",
+      "source_row": 25,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.10",
+      "title": "Устройство геодезических знаков",
+      "source_row": 26,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.11",
+      "title": "Обустройство строительной площадки",
+      "source_row": 27,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.11.1",
+      "title": "Устройство ограждения строительной площадки",
+      "source_row": 28,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "10.11.2",
+      "title": "Устройство временных инженерных сетей",
+      "source_row": 29,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "10.11.3",
+      "title": "Устройство временных внутриплощадочных и подъездных дорог",
+      "source_row": 30,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "10.11.4",
+      "title": "Возведение хозяйственно-бытового городка",
+      "source_row": 31,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "10.12",
+      "title": "Организация движения согласно ПОДД на период строительства",
+      "source_row": 32,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.13",
+      "title": "Оснащение стройплощадки оборудованием по 299-ПП",
+      "source_row": 33,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.13.1",
+      "title": "Видеокамеры для обзора территории стройплощадки (тип 1)",
+      "source_row": 34,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.13.2",
+      "title": "Видеокамеры для установки на КПП в зоне входа/выхода на стройплощадку (тип 2)",
+      "source_row": 35,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.13.3",
+      "title": "Видеокамеры для обзора зоны въезда/выезда на стройплощадку с распознаванием гос. номера ТС (тип 3)",
+      "source_row": 36,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.13.4",
+      "title": "Установка датчиков шума (тип 4) (при необходимости)",
+      "source_row": 37,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.14",
+      "title": "Оснащение стройплощадки системой СКУД с Face ID",
+      "source_row": 38,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.14.1",
+      "title": "Закупка оборудования",
+      "source_row": 39,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.14.2",
+      "title": "Установка оборудования СКУД с FaceID",
+      "source_row": 40,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.14.3",
+      "title": "Интеграция с ЕЦХД",
+      "source_row": 41,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "10.14.4",
+      "title": "Проведение работ по интеграционному тестированию",
+      "source_row": 42,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12",
+      "title": "Выполнение строительно-монтажных работ",
+      "source_row": 43,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.1",
+      "title": "Сборка и подготовка устройства ТПМК",
+      "source_row": 44,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.2",
+      "title": "Проходка тоннелей с монтажем ж/б обделки",
+      "source_row": 45,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3",
+      "title": "Устройство подземной части",
+      "source_row": 46,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.1",
+      "title": "Устройство котлована",
+      "source_row": 47,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.2",
+      "title": "Устройство свай",
+      "source_row": 48,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.3",
+      "title": "Устройство основания",
+      "source_row": 49,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.4",
+      "title": "Устройство фундамента",
+      "source_row": 50,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.4.1",
+      "title": "Устройство свайного фундамента (при необходимости)",
+      "source_row": 51,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.4.2",
+      "title": "Устройство песчаной подготовки",
+      "source_row": 52,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.4.3",
+      "title": "Устройство щебеночного основания",
+      "source_row": 53,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.4.4",
+      "title": "Устройство бетонной подготовки",
+      "source_row": 54,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.4.5",
+      "title": "Устройство монолитных ж/б плит перекрытия/покрытия",
+      "source_row": 55,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.4.6",
+      "title": "Устройство фундаментной плиты",
+      "source_row": 56,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.4.7",
+      "title": "Устройство фундамента под башенный кран",
+      "source_row": 57,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.4.8",
+      "title": "Армокаркас",
+      "source_row": 58,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.5",
+      "title": "Ограждающие конструкции (СВГ,БСС)",
+      "source_row": 59,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.5.1",
+      "title": "Устройство скважины интервала (бурение, разработка, погружение каркаса, бетонирование)",
+      "source_row": 60,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.5.2",
+      "title": "Закрепление грунтов",
+      "source_row": 61,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.5.3",
+      "title": "Обвязочная балка",
+      "source_row": 62,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.6",
+      "title": "Устройство ограждающих конструкций котлована",
+      "source_row": 63,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7",
+      "title": "Земляные работы",
+      "source_row": 64,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.1",
+      "title": "Разработка грунта",
+      "source_row": 65,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.2",
+      "title": "Обратная засыпка",
+      "source_row": 66,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.3",
+      "title": "Планировка грунта",
+      "source_row": 67,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.4",
+      "title": "Уплотнение грунта",
+      "source_row": 68,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.5",
+      "title": "Распорная система",
+      "source_row": 69,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.6",
+      "title": "Шпунтовое ограждение",
+      "source_row": 70,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.7",
+      "title": "Устройство шпунтового ограждения котлована, устройство деревянной забирки",
+      "source_row": 71,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.8",
+      "title": "Выемка грунта котлована",
+      "source_row": 72,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.9",
+      "title": "Разработка грунта с креплением котлована",
+      "source_row": 73,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.10",
+      "title": "Буронабивные сваи",
+      "source_row": 74,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.11",
+      "title": "Буроинъекционные сваи",
+      "source_row": 75,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.12",
+      "title": "Песчаное основание",
+      "source_row": 76,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.13",
+      "title": "Обратная засыпка грунтом",
+      "source_row": 77,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.7.14",
+      "title": "Обратная засыпка песком",
+      "source_row": 78,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.8",
+      "title": "Основание нижнего слоя дорожной одежды (в т.ч. Песчано-подстилающий слой)",
+      "source_row": 79,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.8.1",
+      "title": "Устройство нижнего слоя основания дорожной одежды",
+      "source_row": 80,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.8.2",
+      "title": "Планировка нижнего слоя основания дорожной одежды",
+      "source_row": 81,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.8.3",
+      "title": "Уплотнение нижнего слоя основания дорожной одежды",
+      "source_row": 82,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.3.9",
+      "title": "Монолитные работы ниже отметки\"0\"",
+      "source_row": 83,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.9.1",
+      "title": "Устройство стен, колонн и пилонов подземного этажа",
+      "source_row": 84,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.9.2",
+      "title": "Устройство монолитной ж/б фундаментной плиты (плита под здание, плита под башенный кран, фундамент под оборудование), в т.ч. устройство бетонной подготовки",
+      "source_row": 85,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.9.3",
+      "title": "Устройство несущих ж/б контсрукций подземной части здания",
+      "source_row": 86,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.9.4",
+      "title": "Устройство монолитных ж/б колонн",
+      "source_row": 87,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.9.5",
+      "title": "Устройство монолитных ж/б плит перекрытия/покрытия",
+      "source_row": 88,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.9.6",
+      "title": "Устройство монолитных ж/б лестниц",
+      "source_row": 89,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.9.7",
+      "title": "Устройство плиты перекрытия подземного этажа (+0.000)",
+      "source_row": 90,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.10",
+      "title": "Устройство гидроизоляции",
+      "source_row": 91,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.10.1",
+      "title": "Устройство горизонтальной рулонной гидроизоляции в 2 слоя под защитой",
+      "source_row": 92,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.10.2",
+      "title": "Устройство вертикальной рулонной гидроизоляции в 2 слоя",
+      "source_row": 93,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.10.3",
+      "title": "Устройство отсечной гидроизоляции стен подвала (пакеры)",
+      "source_row": 94,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.3.11",
+      "title": "Инъектирование стен подвала",
+      "source_row": 95,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4",
+      "title": "Устройство надземной части",
+      "source_row": 96,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.1",
+      "title": "Заказ оборудования",
+      "source_row": 97,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.2",
+      "title": "Поставка оборудования",
+      "source_row": 98,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.3",
+      "title": "Монтаж оборудования",
+      "source_row": 99,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.4",
+      "title": "Устройство несущих ж/б контсрукций надземной части здания",
+      "source_row": 100,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.5",
+      "title": "Армокаркас",
+      "source_row": 101,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.6",
+      "title": "Опоры",
+      "source_row": 102,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.6.1",
+      "title": "Устройство гидрозоляции",
+      "source_row": 103,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.6.2",
+      "title": "Устройство ж/б конструкций",
+      "source_row": 104,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.6.3",
+      "title": "Окраска бетонных поверхностей",
+      "source_row": 105,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.7",
+      "title": "Пролеты",
+      "source_row": 106,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.7.1",
+      "title": "Армирование пролетного строения",
+      "source_row": 107,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.7.2",
+      "title": "Бетонирование пролетного строения",
+      "source_row": 108,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.7.3",
+      "title": "Устройство конструкций пролетного строения (металл, балки)",
+      "source_row": 109,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.7.4",
+      "title": "Устройство конструкций кровли",
+      "source_row": 110,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.7.5",
+      "title": "Устройство пирога кровли",
+      "source_row": 111,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.8",
+      "title": "Стены и перегородки",
+      "source_row": 112,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.8.1",
+      "title": "Устройство наружных стен",
+      "source_row": 113,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.8.2",
+      "title": "Устройство внутренних перегородок",
+      "source_row": 114,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.8.3",
+      "title": "Устройство стен из ячеистого бетона, в т.ч. креплением их к монолитным стенам/перекрытиям, заделкой мест примыканий, установкой перемычек и армированием сеткой",
+      "source_row": 115,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.8.4",
+      "title": "Устройство внутренних перегородок",
+      "source_row": 116,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.8.5",
+      "title": "Кладка стен наружных армированных из кирпича",
+      "source_row": 117,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.8.6",
+      "title": "Наружная облицовка поверхности стен, отливов профлистом",
+      "source_row": 118,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.8.7",
+      "title": "Монтаж наружных стеновых сэндвич-панелей \n (сэндвич-панели, нащельники)",
+      "source_row": 119,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.8.8",
+      "title": "Устройство стен и перегородок из кирпича, в т.ч. креплением их к монолитным стенам/перекрытиям, заделкой мест примыканий, установкой перемычек и армированием сеткой",
+      "source_row": 120,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.8.9",
+      "title": "Устройство армированных кирпичных перегородок, укладка перемычек",
+      "source_row": 121,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.8.10",
+      "title": "Облицовка стен ГВЛВ по металлическому каркасу с теплоизоляцией",
+      "source_row": 122,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.8.11",
+      "title": "Устройство армированных перегородок из газобетонных блоков",
+      "source_row": 123,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.8.12",
+      "title": "Устройство армированных внутренних перегородок из газобетонного блока",
+      "source_row": 124,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.8.13",
+      "title": "Установка сантехнических перегородок",
+      "source_row": 125,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.8.14",
+      "title": "Устройство перегородок из гипсокартонных листов (ГКЛ)",
+      "source_row": 126,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.8.15",
+      "title": "Облицовка стен листами ГКЛ на клею в 2 слоя",
+      "source_row": 127,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.8.16",
+      "title": "Установка люков сантехнических (ревизионных)",
+      "source_row": 128,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.9",
+      "title": "Бетонирование плиты и стен",
+      "source_row": 129,
+      "project_type_ids": [
+        "sport",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.10",
+      "title": "Бетонирование колонн и перекрытий",
+      "source_row": 130,
+      "project_type_ids": [
+        "sport",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.11",
+      "title": "Фасад",
+      "source_row": 131,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.11.1",
+      "title": "Монтаж утеплителя",
+      "source_row": 132,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.11.2",
+      "title": "Монтаж фасадной системы",
+      "source_row": 133,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.11.3",
+      "title": "Монтаж навесных элементов фасада",
+      "source_row": 134,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.11.4",
+      "title": "Заполнение оконных проемов",
+      "source_row": 135,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.12",
+      "title": "Основание верхнего слоя дорожной одежды",
+      "source_row": 136,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.12.1",
+      "title": "Устройство верхнего слоя основания дорожной одежды",
+      "source_row": 137,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.12.2",
+      "title": "Планировка верхнего слоя основания дорожной одежды",
+      "source_row": 138,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.12.3",
+      "title": "Уплотнение верхнего слоя основания дорожной одежды",
+      "source_row": 139,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.12.4",
+      "title": "Устройство бортового камня",
+      "source_row": 140,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.13",
+      "title": "Мостовое полотно",
+      "source_row": 141,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.13.1",
+      "title": "Устройство плиты проезжей части",
+      "source_row": 142,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.13.2",
+      "title": "Устройство монолитного участка деформационного шва",
+      "source_row": 143,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.13.3",
+      "title": "Установка бокового барьерного ограждения с внешней стороны пролетного строения",
+      "source_row": 144,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.13.4",
+      "title": "Установка барьерного ограждения на разделительной полосе",
+      "source_row": 145,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.13.5",
+      "title": "Установка перильного ограждения",
+      "source_row": 146,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.13.6",
+      "title": "Устройство конструкций пролетного строения (металл, балки)",
+      "source_row": 147,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.14",
+      "title": "Покрытие дорожной одежды",
+      "source_row": 148,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.14.1",
+      "title": "Устройство нижнего слоя покрытия",
+      "source_row": 149,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.14.2",
+      "title": "Устройство верхнего слоя покрытия",
+      "source_row": 150,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.14.3",
+      "title": "Дорожные знаки",
+      "source_row": 151,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.14.4",
+      "title": "Пешеходное ограждение",
+      "source_row": 152,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.14.5",
+      "title": "Светофорные объекты",
+      "source_row": 153,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.14.6",
+      "title": "Шумо/грязезащитные экраны",
+      "source_row": 154,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.14.7",
+      "title": "Дорожное ограждение",
+      "source_row": 155,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.15",
+      "title": "ВСП (верхнее строение пути)",
+      "source_row": 156,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.15.1",
+      "title": "Жесткое основание",
+      "source_row": 157,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.15.2",
+      "title": "Рельсо-шпальная решетка, стрелочные переводы",
+      "source_row": 158,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.15.3",
+      "title": "Путевой бетон",
+      "source_row": 159,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.16",
+      "title": "Средства организации дорожного движения",
+      "source_row": 160,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.17",
+      "title": "Дорожная разметка",
+      "source_row": 161,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.18",
+      "title": "Обустройство",
+      "source_row": 162,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.19",
+      "title": "Установка дорожных знаков",
+      "source_row": 163,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.20",
+      "title": "Установка пешеходного ограждения",
+      "source_row": 164,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.21",
+      "title": "Установка светофорных объектов",
+      "source_row": 165,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.22",
+      "title": "Установка шумо/грязезащитных экранов",
+      "source_row": 166,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.23",
+      "title": "Подпорная / противопожарная стена",
+      "source_row": 167,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.24",
+      "title": "Противопожарные мероприятия",
+      "source_row": 168,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.25",
+      "title": "Трансбарьер",
+      "source_row": 169,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.26",
+      "title": "огнезащита, окраска",
+      "source_row": 170,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.27",
+      "title": "Насыпь/Призма",
+      "source_row": 171,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.28",
+      "title": "Монолитные работы выше отметки\"0\"",
+      "source_row": 172,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.28.1",
+      "title": "Сталебетонные перекрытия выше отм. 0,000",
+      "source_row": 173,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.28.2",
+      "title": "Устройство монолитных ж/б лестниц",
+      "source_row": 174,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.28.3",
+      "title": "Трибуны актового зала",
+      "source_row": 175,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.28.4",
+      "title": "Устройство монолитных ж/б конструкций входных групп",
+      "source_row": 176,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.28.5",
+      "title": "Устройство горизонтальной рулонной гидроизоляции в 2 слоя под защитой",
+      "source_row": 177,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.28.6",
+      "title": "Устройство вертикальной рулонной гидроизоляции в 2 слоя по праймеру",
+      "source_row": 178,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.28.7",
+      "title": "Теплоизоляция стен экструдированным пенополистиролом толщ. 100 мм",
+      "source_row": 179,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.28.8",
+      "title": "Устройство пристенного дренажа, в т.ч. прижимной стенки",
+      "source_row": 180,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.29",
+      "title": "Каркас здания",
+      "source_row": 181,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.29.1",
+      "title": "Устройство ж/б конструкций",
+      "source_row": 182,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.30",
+      "title": "Металлоконструкции",
+      "source_row": 183,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.30.1",
+      "title": "Металлоконструкции (фермы, балки, прогоны, надколонники, связи, козырьки, решетки приямков, лестницы)",
+      "source_row": 184,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.30.2",
+      "title": "Покрытие из профилированного листа",
+      "source_row": 185,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.30.3",
+      "title": "Огнезащита м/к",
+      "source_row": 186,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.30.4",
+      "title": "Ограждения",
+      "source_row": 187,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.30.5",
+      "title": "Решетки",
+      "source_row": 188,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.30.6",
+      "title": "Пожарные лестницы",
+      "source_row": 189,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.31",
+      "title": "Устройство пирога кровли",
+      "source_row": 190,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.1",
+      "title": "Пароизоляция",
+      "source_row": 191,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.2",
+      "title": "Утепление",
+      "source_row": 192,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.3",
+      "title": "Разуклонка ЦПР",
+      "source_row": 193,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.4",
+      "title": "Гидроизоляция 3 слоя",
+      "source_row": 194,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.5",
+      "title": "Покрытие козырьков",
+      "source_row": 195,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.6",
+      "title": "Водосток с основной кровли, с кровли крылец",
+      "source_row": 196,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.7",
+      "title": "Устройство кровли. Тип 1",
+      "source_row": 197,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.8",
+      "title": "Устройство кровли. Тип 2",
+      "source_row": 198,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.9",
+      "title": "Устройство кровли. Тип 3",
+      "source_row": 199,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.10",
+      "title": "Устройство кровли. Тип 4",
+      "source_row": 200,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.11",
+      "title": "Устройство кровли. Тип 5",
+      "source_row": 201,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.12",
+      "title": "Устройство кровли. Тип 6",
+      "source_row": 202,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.13",
+      "title": "Устройство кровли. Тип 7",
+      "source_row": 203,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.14",
+      "title": "Устройство кровли. Тип 8",
+      "source_row": 204,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.15",
+      "title": "Козырьки из светопрозрачных металлических конструкций",
+      "source_row": 205,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.16",
+      "title": "Дополнительные элементы и надстройки кровли",
+      "source_row": 206,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.17",
+      "title": "Парапеты вентшахты",
+      "source_row": 207,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.18",
+      "title": "Устройство кровли по железобетонному покрытию (Тип кровли 1)",
+      "source_row": 208,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.19",
+      "title": "Устройство кровли по покрытию из стального профлиста (Тип кровли 2)",
+      "source_row": 209,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.20",
+      "title": "Установка аэраторов",
+      "source_row": 210,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.21",
+      "title": "Устройство парапетной крышки, крышки фахверка, отделка фахверков парапета",
+      "source_row": 211,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.22",
+      "title": "Устройство эксплуатируемой дорожки",
+      "source_row": 212,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.23",
+      "title": "Устройство примыканий в парапету, воронкам",
+      "source_row": 213,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.24",
+      "title": "Устройство проходок через кровлю",
+      "source_row": 214,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.31.25",
+      "title": "Устройство шумозащитного экрана",
+      "source_row": 215,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.32",
+      "title": "Устройство конструкций кровли",
+      "source_row": 216,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.33",
+      "title": "Установка ворот",
+      "source_row": 217,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.34",
+      "title": "Установка дверей деревянных",
+      "source_row": 218,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.35",
+      "title": "Установка внутренних металлических дверей",
+      "source_row": 219,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.36",
+      "title": "Установка наружных дверей",
+      "source_row": 220,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.37",
+      "title": "Монтаж алюминиевых витражей (шторы противопожарные, алюминиевые витражи)",
+      "source_row": 221,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.38",
+      "title": "Установка оконных блоков ПВХ",
+      "source_row": 222,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.4.39",
+      "title": "Установка алюминиевых подоконников",
+      "source_row": 223,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.40",
+      "title": "Установка подоконников ГКЛВ с отделкой",
+      "source_row": 224,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.41",
+      "title": "Устройство теплоизоляции стен, в т.ч. укрытие плит утеплителя ветровлагозащитной пленкой (при необходимости)",
+      "source_row": 225,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.42",
+      "title": "Устройство вентилируемого навесного фасада из керамогранита",
+      "source_row": 226,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.43",
+      "title": "Облицовка цоколя крупноформатными панелями из керамогранита на растворе",
+      "source_row": 227,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.44",
+      "title": "Облицовка крылец и наружных лестниц нескользящей бетонной плитки с гранитной крошкой на клее",
+      "source_row": 228,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.45",
+      "title": "Устройство откосов и сливов из оцинкованной стали с полимерным покрытием",
+      "source_row": 229,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.46",
+      "title": "Навесной вентилируемый фасад из стеклофибробетона со вставками из стемалита",
+      "source_row": 230,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.47",
+      "title": "Облицовка цоколя гранитной плиткой на подсистеме вентилируемого фасада",
+      "source_row": 231,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.48",
+      "title": "Облицовка крылец и наружных лестниц гранитной плиткой на растворе",
+      "source_row": 232,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.49",
+      "title": "Металлические декоративные ламели",
+      "source_row": 233,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.50",
+      "title": "Облицовка керамогранитной плиткой внутренней поверхности приямков",
+      "source_row": 234,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.51",
+      "title": "Подшивка нависающих частей здания алюминиевой рейкой",
+      "source_row": 235,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.52",
+      "title": "Элементы фасада (логотипы, вывески, указатели, светильники, флагодержатели и пр.)",
+      "source_row": 236,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.53",
+      "title": "Ограждения из нержавеющей стали",
+      "source_row": 237,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.54",
+      "title": "Теплоизоляция фасада",
+      "source_row": 238,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.55",
+      "title": "Устройство гидроизоляции цоколя",
+      "source_row": 239,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.56",
+      "title": "Установка перфорированной фасадной кассеты",
+      "source_row": 240,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.4.57",
+      "title": "Монтаж козырьков",
+      "source_row": 241,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5",
+      "title": "Устройство инженерных систем",
+      "source_row": 242,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.1",
+      "title": "Устройство наружных сетей",
+      "source_row": 243,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.1.1",
+      "title": "Теплосеть",
+      "source_row": 244,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.1.2",
+      "title": "Водоснабжение",
+      "source_row": 245,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.1.3",
+      "title": "Х/Б канализация",
+      "source_row": 246,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.1.4",
+      "title": "Ливневая канализация",
+      "source_row": 247,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.1.5",
+      "title": "Электроснабжение",
+      "source_row": 248,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.1.6",
+      "title": "Слаботочные сети",
+      "source_row": 249,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.1.7",
+      "title": "Устройство трубной канализации",
+      "source_row": 250,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.1.8",
+      "title": "Прокладка кабеля",
+      "source_row": 251,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.1.9",
+      "title": "Дизель-генераторная установка, в т.ч. фундамент под оборудование",
+      "source_row": 252,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.1.10",
+      "title": "Наружные сети связи",
+      "source_row": 253,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.2",
+      "title": "Устройство внутренних сетей",
+      "source_row": 254,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.2.1",
+      "title": "Вентиляция и кондиционирование",
+      "source_row": 255,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.2.2",
+      "title": "Электрика",
+      "source_row": 256,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.2.3",
+      "title": "Сантехника",
+      "source_row": 257,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.2.4",
+      "title": "Сети связи",
+      "source_row": 258,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.2.5",
+      "title": "Сети водоснабжения",
+      "source_row": 259,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.2.6",
+      "title": "Сети канализации",
+      "source_row": 260,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.2.7",
+      "title": "Система отопления",
+      "source_row": 261,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.2.8",
+      "title": "Ливневая канализация",
+      "source_row": 262,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.2.9",
+      "title": "Разработка грунта с креплением",
+      "source_row": 263,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.2.10",
+      "title": "Устройство колодцев",
+      "source_row": 264,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.2.11",
+      "title": "Прокладка труб",
+      "source_row": 265,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.5.2.12",
+      "title": "Индивидуальный тепловой пункт (ИТП)",
+      "source_row": 266,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.13",
+      "title": "Охранно-защитная дератизационная система (ОЗДС)",
+      "source_row": 267,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.14",
+      "title": "Система автоматизации теплового пункта (АТМ ИТП)",
+      "source_row": 268,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.15",
+      "title": "Силовое электрооборудование и электроосвещение теплового пункта (ЭОМ ИТП)",
+      "source_row": 269,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.16",
+      "title": "Система радиофикации (РФ)",
+      "source_row": 270,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.17",
+      "title": "Система электрочасофикации (ЭЧ)",
+      "source_row": 271,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.18",
+      "title": "Обеспечение доступа инвалидам (ОДИ)",
+      "source_row": 272,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.19",
+      "title": "Система вызова для МГН (СВМГН)",
+      "source_row": 273,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.20",
+      "title": "Система телефонизации, телевидения, доступа к сети передачи данных, домофонии, внутренних сетей (СС)",
+      "source_row": 274,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.21",
+      "title": "Система охранной сигнализации (ОС)",
+      "source_row": 275,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.22",
+      "title": "Система охранного телевидения (СОТ)",
+      "source_row": 276,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.23",
+      "title": "Система контроля управления доступом (СКУД)",
+      "source_row": 277,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.24",
+      "title": "Система автоматической установки пожарная сигнализация (АПС)",
+      "source_row": 278,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.25",
+      "title": "Система оповещения и управления эвакуацией (СОУЭ)",
+      "source_row": 279,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.26",
+      "title": "Система автоматики противопожарной защиты (АППЗ)",
+      "source_row": 280,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.27",
+      "title": "Автоматизация инженерных систем",
+      "source_row": 281,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.28",
+      "title": "Монтаж автоматической установки газового пожаротушения (АУГП)",
+      "source_row": 282,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.5.2.29",
+      "title": "Автоматическая установка водяного пожаротушения",
+      "source_row": 283,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6",
+      "title": "Отделочные работы",
+      "source_row": 284,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.1",
+      "title": "Внешняя отделка",
+      "source_row": 285,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.1.1",
+      "title": "Черновая отделка",
+      "source_row": 286,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.1.2",
+      "title": "Чистовая отделка",
+      "source_row": 287,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.2",
+      "title": "Внутренняя отделка",
+      "source_row": 288,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.2.1",
+      "title": "Черновая отделка",
+      "source_row": 289,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.2.2",
+      "title": "Чистовая отделка",
+      "source_row": 290,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.3",
+      "title": "Внутренняя отделка полов",
+      "source_row": 291,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.3.1",
+      "title": "Черновая отделка полов",
+      "source_row": 292,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.3.2",
+      "title": "Чистовая отделка полов",
+      "source_row": 293,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.4",
+      "title": "Внутренняя отделка стен",
+      "source_row": 294,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.4.1",
+      "title": "Черновая отделка стен",
+      "source_row": 295,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.4.2",
+      "title": "Чистовая отделка стен",
+      "source_row": 296,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.5",
+      "title": "Внутренняя отделка потолков",
+      "source_row": 297,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.5.1",
+      "title": "Черновая отделка потолков",
+      "source_row": 298,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.5.2",
+      "title": "Чистовая отделка потолков",
+      "source_row": 299,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6",
+      "title": "Внутренняя отделка дверей",
+      "source_row": 300,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.1",
+      "title": "Монтаж внутренних дверей",
+      "source_row": 301,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.2",
+      "title": "Монтаж наружных дверей и ворот",
+      "source_row": 302,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.3",
+      "title": "Двери автоматические раздвижные светопрозрачные",
+      "source_row": 303,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.4",
+      "title": "Двери алюминиевые наружные",
+      "source_row": 304,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.5",
+      "title": "Двери алюминиевые внутренние",
+      "source_row": 305,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.6",
+      "title": "Двери металлические наружные",
+      "source_row": 306,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.7",
+      "title": "Двери металлические взломостойкие с решеткой",
+      "source_row": 307,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.8",
+      "title": "Двери металлические рентгенозащитные",
+      "source_row": 308,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.9",
+      "title": "Двери глухие ПВХ",
+      "source_row": 309,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.10",
+      "title": "Двери комбинированные",
+      "source_row": 310,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.11",
+      "title": "Перегородки душевых кабинок из матового стекла",
+      "source_row": 311,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.12",
+      "title": "Сантехнические перегородки из HPL пластика",
+      "source_row": 312,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.13",
+      "title": "Трансформируемые перегородки",
+      "source_row": 313,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.14",
+      "title": "Люки",
+      "source_row": 314,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.6.15",
+      "title": "Люки герметические (кровля)",
+      "source_row": 315,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.6.7",
+      "title": "Внутренняя отделка (технические помещения)",
+      "source_row": 316,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.7.1",
+      "title": "Черновая отделка",
+      "source_row": 317,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.7.2",
+      "title": "Чистовая отделка",
+      "source_row": 318,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.8",
+      "title": "Внутренняя отделка (пассажирские зоны)",
+      "source_row": 319,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.8.1",
+      "title": "Черновая отделка",
+      "source_row": 320,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.8.2",
+      "title": "Чистовая отделка",
+      "source_row": 321,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.9",
+      "title": "Монтаж вертикального транспорта",
+      "source_row": 322,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.10",
+      "title": "Монтаж оборудования по ТХЗ",
+      "source_row": 323,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.11",
+      "title": "Монтаж мебели",
+      "source_row": 324,
+      "project_type_ids": [
+        "healthcare",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.11.1",
+      "title": "Медицинская мебель (с учетом установки и распаковки) (не облагаемая НДС)",
+      "source_row": 325,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.11.2",
+      "title": "Медицинская мебель (с учетом установки и распаковки)",
+      "source_row": 326,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.11.3",
+      "title": "Мебель общего назначения (с учетом установки и распаковки)",
+      "source_row": 327,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.12",
+      "title": "Монтаж эскалаторов",
+      "source_row": 328,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.6.13",
+      "title": "Монтаж оборудования",
+      "source_row": 329,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1",
+      "title": "Монтируемое оборудование",
+      "source_row": 330,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.1",
+      "title": "Медицинское оборудование, с учетом монтажа",
+      "source_row": 331,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.2",
+      "title": "Медицинское оборудование, с учетом монтажа (не облагаемое НДС)",
+      "source_row": 332,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.3",
+      "title": "Офисное оборудование, с учетом монтажа",
+      "source_row": 333,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.4",
+      "title": "Оборудование и мебель конференц-зала, с учетом монтажа",
+      "source_row": 334,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.5",
+      "title": "Электро- и бытовая техника, с учетом монтажа",
+      "source_row": 335,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.6",
+      "title": "Хозяйственный инвентарь, с учетом монтажа",
+      "source_row": 336,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.7",
+      "title": "Периметр безопасности, с учетом монтажа",
+      "source_row": 337,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.8",
+      "title": "Спортивно-технологическое оборудование и спортивный инвентарь, с учетом монтажа",
+      "source_row": 338,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.9",
+      "title": "Учебное оборудование, с учетом монтажа",
+      "source_row": 339,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.10",
+      "title": "Учебное оборудование, с учетом монтажа (не облагаемое НДС)",
+      "source_row": 340,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.11",
+      "title": "Компьютеры и программное обеспечение, с учетом монтажа",
+      "source_row": 341,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.12",
+      "title": "Занавески, жалюзи и прочие предметы обстановки, с учетом монтажа",
+      "source_row": 342,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.13",
+      "title": "Кухонное оборудование и инвентарь, с учетом монтажа",
+      "source_row": 343,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.14",
+      "title": "Музыкальные инструменты и оборудование для залов, с учетом монтажа",
+      "source_row": 344,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.15",
+      "title": "Театральное оборудование, оборудование сцены (с учетом монтажа)",
+      "source_row": 345,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.16",
+      "title": "Светотехническое оборудование, с учетом монтажа",
+      "source_row": 346,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.1.17",
+      "title": "Торгово-технологическое оборудование, с учетом монтажа",
+      "source_row": 347,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.2",
+      "title": "Немонтируемое оборудование",
+      "source_row": 348,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.2.1",
+      "title": "Инструмент медицинский, расходные материалы (не облагаемое НДС)",
+      "source_row": 349,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.2.2",
+      "title": "Инструмент медицинский, расходные материалы",
+      "source_row": 350,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.6.13.2.3",
+      "title": "Хозяйственный инвентарь",
+      "source_row": 351,
+      "project_type_ids": [
+        "healthcare"
+      ]
+    },
+    {
+      "code": "12.7",
+      "title": "Благоустройство территории",
+      "source_row": 352,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.7.1",
+      "title": "Устройство проездов и тротуаров",
+      "source_row": 353,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.7.1.1",
+      "title": "Устройство асфальтобетонного покрытия проездов, тротуаров, площадок с установкой бортового камня",
+      "source_row": 354,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.1.2",
+      "title": "Устройство покрытий из тротуарной плитки с установкой бортового камня",
+      "source_row": 355,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.1.3",
+      "title": "Устройство бетонных покрытий (отмостка)",
+      "source_row": 356,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.1.4",
+      "title": "Устройство площадок с покрытием из резиновой крошки",
+      "source_row": 357,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.1.5",
+      "title": "Установка водоотводных лотков",
+      "source_row": 358,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.1.6",
+      "title": "Устройство подпорных стен",
+      "source_row": 359,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.1.7",
+      "title": "Обустройство дорог: установка знаков, нанесение разметки",
+      "source_row": 360,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.2",
+      "title": "Озеленение",
+      "source_row": 361,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.7.2.1",
+      "title": "Устройство газона рулонного",
+      "source_row": 362,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.2.2",
+      "title": "Устройство газона посевного",
+      "source_row": 363,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.2.3",
+      "title": "Устройство цветников",
+      "source_row": 364,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.2.4",
+      "title": "Посадка деревьев",
+      "source_row": 365,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.2.5",
+      "title": "Посадка кустарников",
+      "source_row": 366,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.3",
+      "title": "Установка МАФов",
+      "source_row": 367,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.7.4",
+      "title": "Вертикальная планировка",
+      "source_row": 368,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.7.4.1",
+      "title": "Устройство насыпи",
+      "source_row": 369,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.4.2",
+      "title": "Устройство выемки",
+      "source_row": 370,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.5",
+      "title": "Посадка зеленых насаждений",
+      "source_row": 371,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.7.6",
+      "title": "Ограждение территории",
+      "source_row": 372,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.6.1",
+      "title": "Ограждение территории, в т.ч. ворота, калитки, шлагбаумы",
+      "source_row": 373,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.6.2",
+      "title": "Ограждение спортивной площадки",
+      "source_row": 374,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office"
+      ]
+    },
+    {
+      "code": "12.7.7",
+      "title": "Устройство пешеходных зон и тротуаров",
+      "source_row": 375,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.7.7.1",
+      "title": "Наружное освещение",
+      "source_row": 376,
+      "project_type_ids": [
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    },
+    {
+      "code": "12.7.7.2",
+      "title": "Прокладка кабеля",
+      "source_row": 377,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.7.7.3",
+      "title": "Устройство фундаментов опор",
+      "source_row": 378,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.7.7.4",
+      "title": "Установка опор",
+      "source_row": 379,
+      "project_type_ids": [
+        "roads"
+      ]
+    },
+    {
+      "code": "12.7.7.5",
+      "title": "Архитектурно-художественная подсветка здания",
+      "source_row": 380,
+      "project_type_ids": [
+        "housing",
+        "education",
+        "healthcare",
+        "sport",
+        "culture",
+        "administration",
+        "preschool",
+        "office",
+        "roads"
+      ]
+    }
+  ]
+}

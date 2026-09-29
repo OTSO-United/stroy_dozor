@@ -1,0 +1,5660 @@
+{
+  "version": "2026-09-18",
+  "source": {
+    "file": "Сводный перечень строительных работ_ЛТЦ.xlsx",
+    "sha256": "82beeb771b5d24bd3fc7323a34f35808dce0c3f396498303a3dd9b9d7f860e3a",
+    "sheet": "Лист1",
+    "range": "A4:K380"
+  },
+  "classes": [
+    {
+      "id": 0,
+      "name": "Самосвал",
+      "activity_group": "mobile",
+      "episodic": true
+    },
+    {
+      "id": 1,
+      "name": "Экскаватор",
+      "activity_group": "stationary_capable",
+      "episodic": false
+    },
+    {
+      "id": 2,
+      "name": "Автогрейдер",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 3,
+      "name": "Каток",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 4,
+      "name": "Кран-манипулятор",
+      "activity_group": "stationary_capable",
+      "episodic": false
+    },
+    {
+      "id": 5,
+      "name": "Газель",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 6,
+      "name": "Вилочный погрузчик",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 7,
+      "name": "Погрузчик большой",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 28,
+      "name": "Погрузчик маленький",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 8,
+      "name": "Автобетоносмеситель",
+      "activity_group": "mobile",
+      "episodic": true
+    },
+    {
+      "id": 9,
+      "name": "Автоцистерна",
+      "activity_group": "stationary_capable",
+      "episodic": false
+    },
+    {
+      "id": 10,
+      "name": "Бульдозер",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 11,
+      "name": "Уборочная техника",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 12,
+      "name": "Фура",
+      "activity_group": "mobile",
+      "episodic": true
+    },
+    {
+      "id": 13,
+      "name": "Автопоезд с тралом",
+      "activity_group": "mobile",
+      "episodic": true
+    },
+    {
+      "id": 14,
+      "name": "Телескопический погрузчик",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 16,
+      "name": "Автокран",
+      "activity_group": "stationary_capable",
+      "episodic": false
+    },
+    {
+      "id": 17,
+      "name": "Башенный кран",
+      "activity_group": "stationary_capable",
+      "episodic": false
+    },
+    {
+      "id": 18,
+      "name": "Асфальтоукладчик",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 19,
+      "name": "Буровая / сваебойная установка",
+      "activity_group": "stationary_capable",
+      "episodic": false
+    },
+    {
+      "id": 20,
+      "name": "Автобетононасос",
+      "activity_group": "stationary_capable",
+      "episodic": false
+    },
+    {
+      "id": 21,
+      "name": "Автовышка / подъёмная платформа",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 22,
+      "name": "Тоннелепроходческий комплекс",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 23,
+      "name": "Дорожно-разметочная машина",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 24,
+      "name": "Трактор / мини-трактор",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 25,
+      "name": "Путевая машина / укладочный кран",
+      "activity_group": "mobile",
+      "episodic": false
+    },
+    {
+      "id": 26,
+      "name": "Гусеничный кран",
+      "activity_group": "stationary_capable",
+      "episodic": false
+    },
+    {
+      "id": 27,
+      "name": "Воздушный компрессор",
+      "activity_group": "stationary_capable",
+      "episodic": false
+    }
+  ],
+  "works": [
+    {
+      "code": "10",
+      "title": "Подготовка территории",
+      "parent_code": "",
+      "source_row": 4,
+      "primary_class_ids": [
+        1,
+        7,
+        10,
+        0
+      ],
+      "episodic_class_ids": [
+        4,
+        12,
+        13,
+        16
+      ]
+    },
+    {
+      "code": "10.1",
+      "title": "Отселение домов в пятне застройки",
+      "parent_code": "10",
+      "source_row": 5,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5
+      ]
+    },
+    {
+      "code": "10.2",
+      "title": "Вынос инженерных систем из пятна застройки (ЦТП/ТП/сети)",
+      "parent_code": "10",
+      "source_row": 6,
+      "primary_class_ids": [
+        1,
+        4
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        12,
+        13,
+        16
+      ]
+    },
+    {
+      "code": "10.2.1",
+      "title": "Вынос сетей: теплосеть (ЦТП)",
+      "parent_code": "10.2",
+      "source_row": 7,
+      "primary_class_ids": [
+        16,
+        4
+      ],
+      "episodic_class_ids": [
+        1,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "10.2.2",
+      "title": "Вынос сетей: теплосеть (сети)",
+      "parent_code": "10.2",
+      "source_row": 8,
+      "primary_class_ids": [
+        1,
+        4
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "10.2.3",
+      "title": "Вынос сетей: теплосеть",
+      "parent_code": "10.2",
+      "source_row": 9,
+      "primary_class_ids": [
+        1,
+        4
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "10.2.4",
+      "title": "Вынос сетей: водоснабжение",
+      "parent_code": "10.2",
+      "source_row": 10,
+      "primary_class_ids": [
+        1,
+        4
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "10.2.5",
+      "title": "Вынос сетей: Х/Б канализация",
+      "parent_code": "10.2",
+      "source_row": 11,
+      "primary_class_ids": [
+        1,
+        4
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "10.2.6",
+      "title": "Вынос сетей: ливневая канализация",
+      "parent_code": "10.2",
+      "source_row": 12,
+      "primary_class_ids": [
+        1,
+        4
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "10.2.7",
+      "title": "Вынос сетей: газоснабжение",
+      "parent_code": "10.2",
+      "source_row": 13,
+      "primary_class_ids": [
+        1,
+        4
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "10.2.8",
+      "title": "Вынос сетей: электроснабжение (ТП)",
+      "parent_code": "10.2",
+      "source_row": 14,
+      "primary_class_ids": [
+        16,
+        4
+      ],
+      "episodic_class_ids": [
+        1,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "10.2.9",
+      "title": "Вынос сетей: электроснабжение (сети)",
+      "parent_code": "10.2",
+      "source_row": 15,
+      "primary_class_ids": [
+        1,
+        4
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "10.2.10",
+      "title": "Вынос сетей: электроснабжение",
+      "parent_code": "10.2",
+      "source_row": 16,
+      "primary_class_ids": [
+        1,
+        4
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "10.2.11",
+      "title": "Вынос сетей: сети связи (КП МПТЦ)",
+      "parent_code": "10.2",
+      "source_row": 17,
+      "primary_class_ids": [
+        1,
+        4
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "10.2.12",
+      "title": "Вынос сетей: сети связи",
+      "parent_code": "10.2",
+      "source_row": 18,
+      "primary_class_ids": [
+        1,
+        4
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "10.3",
+      "title": "Снос домов в пятне застройки",
+      "parent_code": "10",
+      "source_row": 19,
+      "primary_class_ids": [
+        1,
+        7
+      ],
+      "episodic_class_ids": [
+        0,
+        12,
+        16
+      ]
+    },
+    {
+      "code": "10.4",
+      "title": "Снос нежилых объектов в пятне застройки",
+      "parent_code": "10",
+      "source_row": 20,
+      "primary_class_ids": [
+        1,
+        7
+      ],
+      "episodic_class_ids": [
+        0,
+        12,
+        16
+      ]
+    },
+    {
+      "code": "10.5",
+      "title": "Вырубка зеленых насаждений",
+      "parent_code": "10",
+      "source_row": 21,
+      "primary_class_ids": [
+        4,
+        12,
+        24
+      ],
+      "episodic_class_ids": [
+        1,
+        7,
+        0
+      ]
+    },
+    {
+      "code": "10.6",
+      "title": "Пересадка зеленых насождений",
+      "parent_code": "10",
+      "source_row": 22,
+      "primary_class_ids": [
+        1,
+        4,
+        16
+      ],
+      "episodic_class_ids": [
+        12,
+        9,
+        24
+      ]
+    },
+    {
+      "code": "10.7",
+      "title": "Проверка посадки здания",
+      "parent_code": "10",
+      "source_row": 23,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5
+      ]
+    },
+    {
+      "code": "10.8",
+      "title": "Демонтаж ж/б перекрытий",
+      "parent_code": "10",
+      "source_row": 24,
+      "primary_class_ids": [
+        1,
+        7
+      ],
+      "episodic_class_ids": [
+        0,
+        12,
+        16
+      ]
+    },
+    {
+      "code": "10.9",
+      "title": "Погрузка строительного мусора",
+      "parent_code": "10",
+      "source_row": 25,
+      "primary_class_ids": [
+        7,
+        1,
+        0
+      ],
+      "episodic_class_ids": [
+        12
+      ]
+    },
+    {
+      "code": "10.10",
+      "title": "Устройство геодезических знаков",
+      "parent_code": "10",
+      "source_row": 26,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5
+      ]
+    },
+    {
+      "code": "10.11",
+      "title": "Обустройство строительной площадки",
+      "parent_code": "10",
+      "source_row": 27,
+      "primary_class_ids": [
+        4,
+        12,
+        1,
+        7
+      ],
+      "episodic_class_ids": [
+        16,
+        13
+      ]
+    },
+    {
+      "code": "10.11.1",
+      "title": "Устройство ограждения строительной площадки",
+      "parent_code": "10.11",
+      "source_row": 28,
+      "primary_class_ids": [
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        1,
+        16,
+        21
+      ]
+    },
+    {
+      "code": "10.11.2",
+      "title": "Устройство временных инженерных сетей",
+      "parent_code": "10.11",
+      "source_row": 29,
+      "primary_class_ids": [
+        1,
+        4
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "10.11.3",
+      "title": "Устройство временных внутриплощадочных и подъездных дорог",
+      "parent_code": "10.11",
+      "source_row": 30,
+      "primary_class_ids": [
+        0,
+        7,
+        2,
+        3
+      ],
+      "episodic_class_ids": [
+        10,
+        9
+      ]
+    },
+    {
+      "code": "10.11.4",
+      "title": "Возведение хозяйственно-бытового городка",
+      "parent_code": "10.11",
+      "source_row": 31,
+      "primary_class_ids": [
+        4,
+        12,
+        16
+      ],
+      "episodic_class_ids": [
+        13
+      ]
+    },
+    {
+      "code": "10.12",
+      "title": "Организация движения согласно ПОДД на период строительства",
+      "parent_code": "10",
+      "source_row": 32,
+      "primary_class_ids": [
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        21,
+        5,
+        23
+      ]
+    },
+    {
+      "code": "10.13",
+      "title": "Оснащение стройплощадки оборудованием по 299-ПП",
+      "parent_code": "10",
+      "source_row": 33,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        21
+      ]
+    },
+    {
+      "code": "10.13.1",
+      "title": "Видеокамеры для обзора территории стройплощадки (тип 1)",
+      "parent_code": "10.13",
+      "source_row": 34,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        4,
+        5,
+        12
+      ]
+    },
+    {
+      "code": "10.13.2",
+      "title": "Видеокамеры для установки на КПП в зоне входа/выхода на стройплощадку (тип 2)",
+      "parent_code": "10.13",
+      "source_row": 35,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        4,
+        5,
+        12
+      ]
+    },
+    {
+      "code": "10.13.3",
+      "title": "Видеокамеры для обзора зоны въезда/выезда на стройплощадку с распознаванием гос. номера ТС (тип 3)",
+      "parent_code": "10.13",
+      "source_row": 36,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        4,
+        5,
+        12
+      ]
+    },
+    {
+      "code": "10.13.4",
+      "title": "Установка датчиков шума (тип 4) (при необходимости)",
+      "parent_code": "10.13",
+      "source_row": 37,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        4,
+        5,
+        12
+      ]
+    },
+    {
+      "code": "10.14",
+      "title": "Оснащение стройплощадки системой СКУД с Face ID",
+      "parent_code": "10",
+      "source_row": 38,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        21
+      ]
+    },
+    {
+      "code": "10.14.1",
+      "title": "Закупка оборудования",
+      "parent_code": "10.14",
+      "source_row": 39,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5
+      ]
+    },
+    {
+      "code": "10.14.2",
+      "title": "Установка оборудования СКУД с FaceID",
+      "parent_code": "10.14",
+      "source_row": 40,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        4,
+        5,
+        12
+      ]
+    },
+    {
+      "code": "10.14.3",
+      "title": "Интеграция с ЕЦХД",
+      "parent_code": "10.14",
+      "source_row": 41,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5
+      ]
+    },
+    {
+      "code": "10.14.4",
+      "title": "Проведение работ по интеграционному тестированию",
+      "parent_code": "10.14",
+      "source_row": 42,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5
+      ]
+    },
+    {
+      "code": "12",
+      "title": "Выполнение строительно-монтажных работ",
+      "parent_code": "",
+      "source_row": 43,
+      "primary_class_ids": [
+        12,
+        4,
+        16
+      ],
+      "episodic_class_ids": [
+        13,
+        14,
+        17
+      ]
+    },
+    {
+      "code": "12.1",
+      "title": "Сборка и подготовка устройства ТПМК",
+      "parent_code": "12",
+      "source_row": 44,
+      "primary_class_ids": [
+        16,
+        13,
+        12,
+        6
+      ],
+      "episodic_class_ids": [
+        4,
+        14,
+        22
+      ]
+    },
+    {
+      "code": "12.2",
+      "title": "Проходка тоннелей с монтажем ж/б обделки",
+      "parent_code": "12",
+      "source_row": 45,
+      "primary_class_ids": [
+        22
+      ],
+      "episodic_class_ids": [
+        0,
+        12,
+        16
+      ]
+    },
+    {
+      "code": "12.3",
+      "title": "Устройство подземной части",
+      "parent_code": "12",
+      "source_row": 46,
+      "primary_class_ids": [
+        1,
+        0,
+        7,
+        10,
+        16
+      ],
+      "episodic_class_ids": [
+        3,
+        4,
+        12,
+        13,
+        19,
+        8,
+        20
+      ]
+    },
+    {
+      "code": "12.3.1",
+      "title": "Устройство котлована",
+      "parent_code": "12.3",
+      "source_row": 47,
+      "primary_class_ids": [
+        1,
+        0,
+        10
+      ],
+      "episodic_class_ids": [
+        7
+      ]
+    },
+    {
+      "code": "12.3.2",
+      "title": "Устройство свай",
+      "parent_code": "12.3",
+      "source_row": 48,
+      "primary_class_ids": [
+        19,
+        16
+      ],
+      "episodic_class_ids": [
+        8,
+        20,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "12.3.3",
+      "title": "Устройство основания",
+      "parent_code": "12.3",
+      "source_row": 49,
+      "primary_class_ids": [
+        0,
+        7,
+        2,
+        3
+      ],
+      "episodic_class_ids": [
+        1,
+        10,
+        9,
+        8,
+        20
+      ]
+    },
+    {
+      "code": "12.3.4",
+      "title": "Устройство фундамента",
+      "parent_code": "12.3",
+      "source_row": 50,
+      "primary_class_ids": [
+        1,
+        19,
+        0,
+        7,
+        3,
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "code": "12.3.4.1",
+      "title": "Устройство свайного фундамента (при необходимости)",
+      "parent_code": "12.3.4",
+      "source_row": 51,
+      "primary_class_ids": [
+        19,
+        16
+      ],
+      "episodic_class_ids": [
+        8,
+        20,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "12.3.4.2",
+      "title": "Устройство песчаной подготовки",
+      "parent_code": "12.3.4",
+      "source_row": 52,
+      "primary_class_ids": [
+        0,
+        7,
+        2,
+        3
+      ],
+      "episodic_class_ids": [
+        10,
+        9
+      ]
+    },
+    {
+      "code": "12.3.4.3",
+      "title": "Устройство щебеночного основания",
+      "parent_code": "12.3.4",
+      "source_row": 53,
+      "primary_class_ids": [
+        0,
+        7,
+        2,
+        3
+      ],
+      "episodic_class_ids": [
+        10,
+        9
+      ]
+    },
+    {
+      "code": "12.3.4.4",
+      "title": "Устройство бетонной подготовки",
+      "parent_code": "12.3.4",
+      "source_row": 54,
+      "primary_class_ids": [
+        8,
+        20
+      ],
+      "episodic_class_ids": [
+        16,
+        12
+      ]
+    },
+    {
+      "code": "12.3.4.5",
+      "title": "Устройство монолитных ж/б плит перекрытия/покрытия",
+      "parent_code": "12.3.4",
+      "source_row": 55,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.3.4.6",
+      "title": "Устройство фундаментной плиты",
+      "parent_code": "12.3.4",
+      "source_row": 56,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.3.4.7",
+      "title": "Устройство фундамента под башенный кран",
+      "parent_code": "12.3.4",
+      "source_row": 57,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.3.4.8",
+      "title": "Армокаркас",
+      "parent_code": "12.3.4",
+      "source_row": 58,
+      "primary_class_ids": [
+        16,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        14,
+        6
+      ]
+    },
+    {
+      "code": "12.3.5",
+      "title": "Ограждающие конструкции (СВГ,БСС)",
+      "parent_code": "12.3",
+      "source_row": 59,
+      "primary_class_ids": [
+        19,
+        16,
+        1
+      ],
+      "episodic_class_ids": [
+        12,
+        13,
+        8,
+        20
+      ]
+    },
+    {
+      "code": "12.3.5.1",
+      "title": "Устройство скважины интервала (бурение, разработка, погружение каркаса, бетонирование)",
+      "parent_code": "12.3.5",
+      "source_row": 60,
+      "primary_class_ids": [
+        19,
+        16
+      ],
+      "episodic_class_ids": [
+        8,
+        20,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "12.3.5.2",
+      "title": "Закрепление грунтов",
+      "parent_code": "12.3.5",
+      "source_row": 61,
+      "primary_class_ids": [
+        19
+      ],
+      "episodic_class_ids": [
+        8,
+        20,
+        12
+      ]
+    },
+    {
+      "code": "12.3.5.3",
+      "title": "Обвязочная балка",
+      "parent_code": "12.3.5",
+      "source_row": 62,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.3.6",
+      "title": "Устройство ограждающих конструкций котлована",
+      "parent_code": "12.3",
+      "source_row": 63,
+      "primary_class_ids": [
+        19,
+        16,
+        1
+      ],
+      "episodic_class_ids": [
+        12,
+        13,
+        8,
+        20
+      ]
+    },
+    {
+      "code": "12.3.7",
+      "title": "Земляные работы",
+      "parent_code": "12.3",
+      "source_row": 64,
+      "primary_class_ids": [
+        1,
+        0,
+        7,
+        10,
+        2,
+        3
+      ],
+      "episodic_class_ids": [
+        9
+      ]
+    },
+    {
+      "code": "12.3.7.1",
+      "title": "Разработка грунта",
+      "parent_code": "12.3.7",
+      "source_row": 65,
+      "primary_class_ids": [
+        1,
+        0
+      ],
+      "episodic_class_ids": [
+        10,
+        7
+      ]
+    },
+    {
+      "code": "12.3.7.2",
+      "title": "Обратная засыпка",
+      "parent_code": "12.3.7",
+      "source_row": 66,
+      "primary_class_ids": [
+        0,
+        7,
+        10,
+        3
+      ],
+      "episodic_class_ids": [
+        2,
+        9
+      ]
+    },
+    {
+      "code": "12.3.7.3",
+      "title": "Планировка грунта",
+      "parent_code": "12.3.7",
+      "source_row": 67,
+      "primary_class_ids": [
+        2,
+        10,
+        7
+      ],
+      "episodic_class_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "code": "12.3.7.4",
+      "title": "Уплотнение грунта",
+      "parent_code": "12.3.7",
+      "source_row": 68,
+      "primary_class_ids": [
+        3
+      ],
+      "episodic_class_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "code": "12.3.7.5",
+      "title": "Распорная система",
+      "parent_code": "12.3.7",
+      "source_row": 69,
+      "primary_class_ids": [
+        16,
+        12,
+        13
+      ],
+      "episodic_class_ids": [
+        1
+      ]
+    },
+    {
+      "code": "12.3.7.6",
+      "title": "Шпунтовое ограждение",
+      "parent_code": "12.3.7",
+      "source_row": 70,
+      "primary_class_ids": [
+        19,
+        16
+      ],
+      "episodic_class_ids": [
+        12,
+        13,
+        1
+      ]
+    },
+    {
+      "code": "12.3.7.7",
+      "title": "Устройство шпунтового ограждения котлована, устройство деревянной забирки",
+      "parent_code": "12.3.7",
+      "source_row": 71,
+      "primary_class_ids": [
+        19,
+        16
+      ],
+      "episodic_class_ids": [
+        12,
+        13,
+        1
+      ]
+    },
+    {
+      "code": "12.3.7.8",
+      "title": "Выемка грунта котлована",
+      "parent_code": "12.3.7",
+      "source_row": 72,
+      "primary_class_ids": [
+        1,
+        0
+      ],
+      "episodic_class_ids": [
+        10,
+        7
+      ]
+    },
+    {
+      "code": "12.3.7.9",
+      "title": "Разработка грунта с креплением котлована",
+      "parent_code": "12.3.7",
+      "source_row": 73,
+      "primary_class_ids": [
+        19,
+        16,
+        1
+      ],
+      "episodic_class_ids": [
+        12,
+        13,
+        8,
+        20
+      ]
+    },
+    {
+      "code": "12.3.7.10",
+      "title": "Буронабивные сваи",
+      "parent_code": "12.3.7",
+      "source_row": 74,
+      "primary_class_ids": [
+        19,
+        16
+      ],
+      "episodic_class_ids": [
+        8,
+        20,
+        12,
+        13
+      ]
+    },
+    {
+      "code": "12.3.7.11",
+      "title": "Буроинъекционные сваи",
+      "parent_code": "12.3.7",
+      "source_row": 75,
+      "primary_class_ids": [
+        19
+      ],
+      "episodic_class_ids": [
+        8,
+        20,
+        12
+      ]
+    },
+    {
+      "code": "12.3.7.12",
+      "title": "Песчаное основание",
+      "parent_code": "12.3.7",
+      "source_row": 76,
+      "primary_class_ids": [
+        0,
+        7,
+        2,
+        3
+      ],
+      "episodic_class_ids": [
+        10,
+        9
+      ]
+    },
+    {
+      "code": "12.3.7.13",
+      "title": "Обратная засыпка грунтом",
+      "parent_code": "12.3.7",
+      "source_row": 77,
+      "primary_class_ids": [
+        0,
+        7,
+        10,
+        3
+      ],
+      "episodic_class_ids": [
+        2,
+        9
+      ]
+    },
+    {
+      "code": "12.3.7.14",
+      "title": "Обратная засыпка песком",
+      "parent_code": "12.3.7",
+      "source_row": 78,
+      "primary_class_ids": [
+        0,
+        7,
+        10,
+        3
+      ],
+      "episodic_class_ids": [
+        2,
+        9
+      ]
+    },
+    {
+      "code": "12.3.8",
+      "title": "Основание нижнего слоя дорожной одежды (в т.ч. Песчано-подстилающий слой)",
+      "parent_code": "12.3",
+      "source_row": 79,
+      "primary_class_ids": [
+        0,
+        7,
+        2,
+        3
+      ],
+      "episodic_class_ids": [
+        1,
+        10,
+        9,
+        8,
+        20
+      ]
+    },
+    {
+      "code": "12.3.8.1",
+      "title": "Устройство нижнего слоя основания дорожной одежды",
+      "parent_code": "12.3.8",
+      "source_row": 80,
+      "primary_class_ids": [
+        0,
+        7,
+        2,
+        3
+      ],
+      "episodic_class_ids": [
+        10,
+        9
+      ]
+    },
+    {
+      "code": "12.3.8.2",
+      "title": "Планировка нижнего слоя основания дорожной одежды",
+      "parent_code": "12.3.8",
+      "source_row": 81,
+      "primary_class_ids": [
+        2,
+        10,
+        7
+      ],
+      "episodic_class_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "code": "12.3.8.3",
+      "title": "Уплотнение нижнего слоя основания дорожной одежды",
+      "parent_code": "12.3.8",
+      "source_row": 82,
+      "primary_class_ids": [
+        3
+      ],
+      "episodic_class_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "code": "12.3.9",
+      "title": "Монолитные работы ниже отметки\"0\"",
+      "parent_code": "12.3",
+      "source_row": 83,
+      "primary_class_ids": [
+        8,
+        20,
+        16,
+        17
+      ],
+      "episodic_class_ids": [
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.3.9.1",
+      "title": "Устройство стен, колонн и пилонов подземного этажа",
+      "parent_code": "12.3.9",
+      "source_row": 84,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.3.9.2",
+      "title": "Устройство монолитной ж/б фундаментной плиты (плита под здание, плита под башенный кран, фундамент под оборудование), в т.ч. устройство бетонной подготовки",
+      "parent_code": "12.3.9",
+      "source_row": 85,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.3.9.3",
+      "title": "Устройство несущих ж/б контсрукций подземной части здания",
+      "parent_code": "12.3.9",
+      "source_row": 86,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.3.9.4",
+      "title": "Устройство монолитных ж/б колонн",
+      "parent_code": "12.3.9",
+      "source_row": 87,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.3.9.5",
+      "title": "Устройство монолитных ж/б плит перекрытия/покрытия",
+      "parent_code": "12.3.9",
+      "source_row": 88,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.3.9.6",
+      "title": "Устройство монолитных ж/б лестниц",
+      "parent_code": "12.3.9",
+      "source_row": 89,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.3.9.7",
+      "title": "Устройство плиты перекрытия подземного этажа (+0.000)",
+      "parent_code": "12.3.9",
+      "source_row": 90,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.3.10",
+      "title": "Устройство гидроизоляции",
+      "parent_code": "12.3",
+      "source_row": 91,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.3.10.1",
+      "title": "Устройство горизонтальной рулонной гидроизоляции в 2 слоя под защитой",
+      "parent_code": "12.3.10",
+      "source_row": 92,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.3.10.2",
+      "title": "Устройство вертикальной рулонной гидроизоляции в 2 слоя",
+      "parent_code": "12.3.10",
+      "source_row": 93,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.3.10.3",
+      "title": "Устройство отсечной гидроизоляции стен подвала (пакеры)",
+      "parent_code": "12.3.10",
+      "source_row": 94,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.3.11",
+      "title": "Инъектирование стен подвала",
+      "parent_code": "12.3",
+      "source_row": 95,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.4",
+      "title": "Устройство надземной части",
+      "parent_code": "12",
+      "source_row": 96,
+      "primary_class_ids": [
+        17,
+        16,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        13,
+        8,
+        20,
+        21
+      ]
+    },
+    {
+      "code": "12.4.1",
+      "title": "Заказ оборудования",
+      "parent_code": "12.4",
+      "source_row": 97,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5
+      ]
+    },
+    {
+      "code": "12.4.2",
+      "title": "Поставка оборудования",
+      "parent_code": "12.4",
+      "source_row": 98,
+      "primary_class_ids": [
+        12,
+        13
+      ],
+      "episodic_class_ids": [
+        16,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.4.3",
+      "title": "Монтаж оборудования",
+      "parent_code": "12.4",
+      "source_row": 99,
+      "primary_class_ids": [
+        16,
+        14,
+        6
+      ],
+      "episodic_class_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "code": "12.4.4",
+      "title": "Устройство несущих ж/б контсрукций надземной части здания",
+      "parent_code": "12.4",
+      "source_row": 100,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.5",
+      "title": "Армокаркас",
+      "parent_code": "12.4",
+      "source_row": 101,
+      "primary_class_ids": [
+        16,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        14,
+        6
+      ]
+    },
+    {
+      "code": "12.4.6",
+      "title": "Опоры",
+      "parent_code": "12.4",
+      "source_row": 102,
+      "primary_class_ids": [
+        16,
+        12,
+        13,
+        8,
+        20
+      ],
+      "episodic_class_ids": [
+        21,
+        14
+      ]
+    },
+    {
+      "code": "12.4.6.1",
+      "title": "Устройство гидрозоляции",
+      "parent_code": "12.4.6",
+      "source_row": 103,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.4.6.2",
+      "title": "Устройство ж/б конструкций",
+      "parent_code": "12.4.6",
+      "source_row": 104,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.6.3",
+      "title": "Окраска бетонных поверхностей",
+      "parent_code": "12.4.6",
+      "source_row": 105,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.4.7",
+      "title": "Пролеты",
+      "parent_code": "12.4",
+      "source_row": 106,
+      "primary_class_ids": [
+        16,
+        12,
+        13
+      ],
+      "episodic_class_ids": [
+        14,
+        8,
+        20
+      ]
+    },
+    {
+      "code": "12.4.7.1",
+      "title": "Армирование пролетного строения",
+      "parent_code": "12.4.7",
+      "source_row": 107,
+      "primary_class_ids": [
+        16,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        14,
+        6
+      ]
+    },
+    {
+      "code": "12.4.7.2",
+      "title": "Бетонирование пролетного строения",
+      "parent_code": "12.4.7",
+      "source_row": 108,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.7.3",
+      "title": "Устройство конструкций пролетного строения (металл, балки)",
+      "parent_code": "12.4.7",
+      "source_row": 109,
+      "primary_class_ids": [
+        16,
+        12,
+        13
+      ],
+      "episodic_class_ids": [
+        17,
+        14
+      ]
+    },
+    {
+      "code": "12.4.7.4",
+      "title": "Устройство конструкций кровли",
+      "parent_code": "12.4.7",
+      "source_row": 110,
+      "primary_class_ids": [
+        17,
+        16,
+        12
+      ],
+      "episodic_class_ids": [
+        14,
+        13,
+        21
+      ]
+    },
+    {
+      "code": "12.4.7.5",
+      "title": "Устройство пирога кровли",
+      "parent_code": "12.4.7",
+      "source_row": 111,
+      "primary_class_ids": [
+        21,
+        17
+      ],
+      "episodic_class_ids": [
+        16,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.8",
+      "title": "Стены и перегородки",
+      "parent_code": "12.4",
+      "source_row": 112,
+      "primary_class_ids": [
+        17,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        16,
+        6
+      ]
+    },
+    {
+      "code": "12.4.8.1",
+      "title": "Устройство наружных стен",
+      "parent_code": "12.4.8",
+      "source_row": 113,
+      "primary_class_ids": [
+        17,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        16,
+        21
+      ]
+    },
+    {
+      "code": "12.4.8.2",
+      "title": "Устройство внутренних перегородок",
+      "parent_code": "12.4.8",
+      "source_row": 114,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.4.8.3",
+      "title": "Устройство стен из ячеистого бетона, в т.ч. креплением их к монолитным стенам/перекрытиям, заделкой мест примыканий, установкой перемычек и армированием сеткой",
+      "parent_code": "12.4.8",
+      "source_row": 115,
+      "primary_class_ids": [
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        6
+      ]
+    },
+    {
+      "code": "12.4.8.4",
+      "title": "Устройство внутренних перегородок",
+      "parent_code": "12.4.8",
+      "source_row": 116,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.4.8.5",
+      "title": "Кладка стен наружных армированных из кирпича",
+      "parent_code": "12.4.8",
+      "source_row": 117,
+      "primary_class_ids": [
+        17,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        16,
+        21
+      ]
+    },
+    {
+      "code": "12.4.8.6",
+      "title": "Наружная облицовка поверхности стен, отливов профлистом",
+      "parent_code": "12.4.8",
+      "source_row": 118,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.4.8.7",
+      "title": "Монтаж наружных стеновых сэндвич-панелей \n (сэндвич-панели, нащельники)",
+      "parent_code": "12.4.8",
+      "source_row": 119,
+      "primary_class_ids": [
+        21,
+        16,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        13
+      ]
+    },
+    {
+      "code": "12.4.8.8",
+      "title": "Устройство стен и перегородок из кирпича, в т.ч. креплением их к монолитным стенам/перекрытиям, заделкой мест примыканий, установкой перемычек и армированием сеткой",
+      "parent_code": "12.4.8",
+      "source_row": 120,
+      "primary_class_ids": [
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        6
+      ]
+    },
+    {
+      "code": "12.4.8.9",
+      "title": "Устройство армированных кирпичных перегородок, укладка перемычек",
+      "parent_code": "12.4.8",
+      "source_row": 121,
+      "primary_class_ids": [
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        6
+      ]
+    },
+    {
+      "code": "12.4.8.10",
+      "title": "Облицовка стен ГВЛВ по металлическому каркасу с теплоизоляцией",
+      "parent_code": "12.4.8",
+      "source_row": 122,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.4.8.11",
+      "title": "Устройство армированных перегородок из газобетонных блоков",
+      "parent_code": "12.4.8",
+      "source_row": 123,
+      "primary_class_ids": [
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        6
+      ]
+    },
+    {
+      "code": "12.4.8.12",
+      "title": "Устройство армированных внутренних перегородок из газобетонного блока",
+      "parent_code": "12.4.8",
+      "source_row": 124,
+      "primary_class_ids": [
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        6
+      ]
+    },
+    {
+      "code": "12.4.8.13",
+      "title": "Установка сантехнических перегородок",
+      "parent_code": "12.4.8",
+      "source_row": 125,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.4.8.14",
+      "title": "Устройство перегородок из гипсокартонных листов (ГКЛ)",
+      "parent_code": "12.4.8",
+      "source_row": 126,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.4.8.15",
+      "title": "Облицовка стен листами ГКЛ на клею в 2 слоя",
+      "parent_code": "12.4.8",
+      "source_row": 127,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.4.8.16",
+      "title": "Установка люков сантехнических (ревизионных)",
+      "parent_code": "12.4.8",
+      "source_row": 128,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.4.9",
+      "title": "Бетонирование плиты и стен",
+      "parent_code": "12.4",
+      "source_row": 129,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.10",
+      "title": "Бетонирование колонн и перекрытий",
+      "parent_code": "12.4",
+      "source_row": 130,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.11",
+      "title": "Фасад",
+      "parent_code": "12.4",
+      "source_row": 131,
+      "primary_class_ids": [
+        21,
+        17,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        16
+      ]
+    },
+    {
+      "code": "12.4.11.1",
+      "title": "Монтаж утеплителя",
+      "parent_code": "12.4.11",
+      "source_row": 132,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.4.11.2",
+      "title": "Монтаж фасадной системы",
+      "parent_code": "12.4.11",
+      "source_row": 133,
+      "primary_class_ids": [
+        21,
+        17,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        16
+      ]
+    },
+    {
+      "code": "12.4.11.3",
+      "title": "Монтаж навесных элементов фасада",
+      "parent_code": "12.4.11",
+      "source_row": 134,
+      "primary_class_ids": [
+        21,
+        16,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        13
+      ]
+    },
+    {
+      "code": "12.4.11.4",
+      "title": "Заполнение оконных проемов",
+      "parent_code": "12.4.11",
+      "source_row": 135,
+      "primary_class_ids": [
+        21,
+        16,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        5
+      ]
+    },
+    {
+      "code": "12.4.12",
+      "title": "Основание верхнего слоя дорожной одежды",
+      "parent_code": "12.4",
+      "source_row": 136,
+      "primary_class_ids": [
+        0,
+        7,
+        2,
+        3
+      ],
+      "episodic_class_ids": [
+        1,
+        10,
+        9,
+        8,
+        20
+      ]
+    },
+    {
+      "code": "12.4.12.1",
+      "title": "Устройство верхнего слоя основания дорожной одежды",
+      "parent_code": "12.4.12",
+      "source_row": 137,
+      "primary_class_ids": [
+        0,
+        7,
+        2,
+        3
+      ],
+      "episodic_class_ids": [
+        10,
+        9
+      ]
+    },
+    {
+      "code": "12.4.12.2",
+      "title": "Планировка верхнего слоя основания дорожной одежды",
+      "parent_code": "12.4.12",
+      "source_row": 138,
+      "primary_class_ids": [
+        2,
+        10,
+        7
+      ],
+      "episodic_class_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "code": "12.4.12.3",
+      "title": "Уплотнение верхнего слоя основания дорожной одежды",
+      "parent_code": "12.4.12",
+      "source_row": 139,
+      "primary_class_ids": [
+        3
+      ],
+      "episodic_class_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "code": "12.4.12.4",
+      "title": "Устройство бортового камня",
+      "parent_code": "12.4.12",
+      "source_row": 140,
+      "primary_class_ids": [
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        16,
+        1
+      ]
+    },
+    {
+      "code": "12.4.13",
+      "title": "Мостовое полотно",
+      "parent_code": "12.4",
+      "source_row": 141,
+      "primary_class_ids": [
+        16,
+        12,
+        13,
+        8,
+        20
+      ],
+      "episodic_class_ids": [
+        14
+      ]
+    },
+    {
+      "code": "12.4.13.1",
+      "title": "Устройство плиты проезжей части",
+      "parent_code": "12.4.13",
+      "source_row": 142,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.13.2",
+      "title": "Устройство монолитного участка деформационного шва",
+      "parent_code": "12.4.13",
+      "source_row": 143,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.13.3",
+      "title": "Установка бокового барьерного ограждения с внешней стороны пролетного строения",
+      "parent_code": "12.4.13",
+      "source_row": 144,
+      "primary_class_ids": [
+        4,
+        12,
+        16
+      ],
+      "episodic_class_ids": [
+        21,
+        13
+      ]
+    },
+    {
+      "code": "12.4.13.4",
+      "title": "Установка барьерного ограждения на разделительной полосе",
+      "parent_code": "12.4.13",
+      "source_row": 145,
+      "primary_class_ids": [
+        4,
+        12,
+        16
+      ],
+      "episodic_class_ids": [
+        21,
+        13
+      ]
+    },
+    {
+      "code": "12.4.13.5",
+      "title": "Установка перильного ограждения",
+      "parent_code": "12.4.13",
+      "source_row": 146,
+      "primary_class_ids": [
+        4,
+        12,
+        16
+      ],
+      "episodic_class_ids": [
+        21,
+        13
+      ]
+    },
+    {
+      "code": "12.4.13.6",
+      "title": "Устройство конструкций пролетного строения (металл, балки)",
+      "parent_code": "12.4.13",
+      "source_row": 147,
+      "primary_class_ids": [
+        16,
+        12,
+        13
+      ],
+      "episodic_class_ids": [
+        17,
+        14
+      ]
+    },
+    {
+      "code": "12.4.14",
+      "title": "Покрытие дорожной одежды",
+      "parent_code": "12.4",
+      "source_row": 148,
+      "primary_class_ids": [
+        18,
+        3,
+        0
+      ],
+      "episodic_class_ids": [
+        9,
+        11
+      ]
+    },
+    {
+      "code": "12.4.14.1",
+      "title": "Устройство нижнего слоя покрытия",
+      "parent_code": "12.4.14",
+      "source_row": 149,
+      "primary_class_ids": [
+        18,
+        3,
+        0
+      ],
+      "episodic_class_ids": [
+        9,
+        11
+      ]
+    },
+    {
+      "code": "12.4.14.2",
+      "title": "Устройство верхнего слоя покрытия",
+      "parent_code": "12.4.14",
+      "source_row": 150,
+      "primary_class_ids": [
+        18,
+        3,
+        0
+      ],
+      "episodic_class_ids": [
+        9,
+        11
+      ]
+    },
+    {
+      "code": "12.4.14.3",
+      "title": "Дорожные знаки",
+      "parent_code": "12.4.14",
+      "source_row": 151,
+      "primary_class_ids": [
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        21
+      ]
+    },
+    {
+      "code": "12.4.14.4",
+      "title": "Пешеходное ограждение",
+      "parent_code": "12.4.14",
+      "source_row": 152,
+      "primary_class_ids": [
+        4,
+        12,
+        16
+      ],
+      "episodic_class_ids": [
+        21,
+        13
+      ]
+    },
+    {
+      "code": "12.4.14.5",
+      "title": "Светофорные объекты",
+      "parent_code": "12.4.14",
+      "source_row": 153,
+      "primary_class_ids": [
+        4,
+        12,
+        21
+      ],
+      "episodic_class_ids": [
+        16
+      ]
+    },
+    {
+      "code": "12.4.14.6",
+      "title": "Шумо/грязезащитные экраны",
+      "parent_code": "12.4.14",
+      "source_row": 154,
+      "primary_class_ids": [
+        16,
+        12,
+        13
+      ],
+      "episodic_class_ids": [
+        21,
+        4
+      ]
+    },
+    {
+      "code": "12.4.14.7",
+      "title": "Дорожное ограждение",
+      "parent_code": "12.4.14",
+      "source_row": 155,
+      "primary_class_ids": [
+        4,
+        12,
+        16
+      ],
+      "episodic_class_ids": [
+        21,
+        13
+      ]
+    },
+    {
+      "code": "12.4.15",
+      "title": "ВСП (верхнее строение пути)",
+      "parent_code": "12.4",
+      "source_row": 156,
+      "primary_class_ids": [
+        25,
+        16,
+        12,
+        13
+      ],
+      "episodic_class_ids": [
+        14,
+        8,
+        20
+      ]
+    },
+    {
+      "code": "12.4.15.1",
+      "title": "Жесткое основание",
+      "parent_code": "12.4.15",
+      "source_row": 157,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        12,
+        3
+      ]
+    },
+    {
+      "code": "12.4.15.2",
+      "title": "Рельсо-шпальная решетка, стрелочные переводы",
+      "parent_code": "12.4.15",
+      "source_row": 158,
+      "primary_class_ids": [
+        25,
+        16,
+        12,
+        13
+      ],
+      "episodic_class_ids": [
+        14
+      ]
+    },
+    {
+      "code": "12.4.15.3",
+      "title": "Путевой бетон",
+      "parent_code": "12.4.15",
+      "source_row": 159,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        12,
+        3
+      ]
+    },
+    {
+      "code": "12.4.16",
+      "title": "Средства организации дорожного движения",
+      "parent_code": "12.4",
+      "source_row": 160,
+      "primary_class_ids": [
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        16,
+        21,
+        23
+      ]
+    },
+    {
+      "code": "12.4.17",
+      "title": "Дорожная разметка",
+      "parent_code": "12.4",
+      "source_row": 161,
+      "primary_class_ids": [
+        23,
+        11
+      ],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.4.18",
+      "title": "Обустройство",
+      "parent_code": "12.4",
+      "source_row": 162,
+      "primary_class_ids": [
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        16,
+        21,
+        23
+      ]
+    },
+    {
+      "code": "12.4.19",
+      "title": "Установка дорожных знаков",
+      "parent_code": "12.4",
+      "source_row": 163,
+      "primary_class_ids": [
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        21
+      ]
+    },
+    {
+      "code": "12.4.20",
+      "title": "Установка пешеходного ограждения",
+      "parent_code": "12.4",
+      "source_row": 164,
+      "primary_class_ids": [
+        4,
+        12,
+        16
+      ],
+      "episodic_class_ids": [
+        21,
+        13
+      ]
+    },
+    {
+      "code": "12.4.21",
+      "title": "Установка светофорных объектов",
+      "parent_code": "12.4",
+      "source_row": 165,
+      "primary_class_ids": [
+        4,
+        12,
+        21
+      ],
+      "episodic_class_ids": [
+        16
+      ]
+    },
+    {
+      "code": "12.4.22",
+      "title": "Установка шумо/грязезащитных экранов",
+      "parent_code": "12.4",
+      "source_row": 166,
+      "primary_class_ids": [
+        16,
+        12,
+        13
+      ],
+      "episodic_class_ids": [
+        21,
+        4
+      ]
+    },
+    {
+      "code": "12.4.23",
+      "title": "Подпорная / противопожарная стена",
+      "parent_code": "12.4",
+      "source_row": 167,
+      "primary_class_ids": [
+        1,
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        12,
+        0
+      ]
+    },
+    {
+      "code": "12.4.24",
+      "title": "Противопожарные мероприятия",
+      "parent_code": "12.4",
+      "source_row": 168,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        21
+      ]
+    },
+    {
+      "code": "12.4.25",
+      "title": "Трансбарьер",
+      "parent_code": "12.4",
+      "source_row": 169,
+      "primary_class_ids": [
+        4,
+        12,
+        16
+      ],
+      "episodic_class_ids": [
+        21,
+        13
+      ]
+    },
+    {
+      "code": "12.4.26",
+      "title": "огнезащита, окраска",
+      "parent_code": "12.4",
+      "source_row": 170,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.4.27",
+      "title": "Насыпь/Призма",
+      "parent_code": "12.4",
+      "source_row": 171,
+      "primary_class_ids": [
+        0,
+        7,
+        10,
+        2,
+        3
+      ],
+      "episodic_class_ids": [
+        9
+      ]
+    },
+    {
+      "code": "12.4.28",
+      "title": "Монолитные работы выше отметки\"0\"",
+      "parent_code": "12.4",
+      "source_row": 172,
+      "primary_class_ids": [
+        8,
+        20,
+        16,
+        17
+      ],
+      "episodic_class_ids": [
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.28.1",
+      "title": "Сталебетонные перекрытия выше отм. 0,000",
+      "parent_code": "12.4.28",
+      "source_row": 173,
+      "primary_class_ids": [
+        17,
+        16,
+        8,
+        20
+      ],
+      "episodic_class_ids": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "code": "12.4.28.2",
+      "title": "Устройство монолитных ж/б лестниц",
+      "parent_code": "12.4.28",
+      "source_row": 174,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.28.3",
+      "title": "Трибуны актового зала",
+      "parent_code": "12.4.28",
+      "source_row": 175,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.28.4",
+      "title": "Устройство монолитных ж/б конструкций входных групп",
+      "parent_code": "12.4.28",
+      "source_row": 176,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.28.5",
+      "title": "Устройство горизонтальной рулонной гидроизоляции в 2 слоя под защитой",
+      "parent_code": "12.4.28",
+      "source_row": 177,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.4.28.6",
+      "title": "Устройство вертикальной рулонной гидроизоляции в 2 слоя по праймеру",
+      "parent_code": "12.4.28",
+      "source_row": 178,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.4.28.7",
+      "title": "Теплоизоляция стен экструдированным пенополистиролом толщ. 100 мм",
+      "parent_code": "12.4.28",
+      "source_row": 179,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.4.28.8",
+      "title": "Устройство пристенного дренажа, в т.ч. прижимной стенки",
+      "parent_code": "12.4.28",
+      "source_row": 180,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        16,
+        13
+      ]
+    },
+    {
+      "code": "12.4.29",
+      "title": "Каркас здания",
+      "parent_code": "12.4",
+      "source_row": 181,
+      "primary_class_ids": [
+        17,
+        16,
+        12,
+        14
+      ],
+      "episodic_class_ids": [
+        13,
+        8,
+        20
+      ]
+    },
+    {
+      "code": "12.4.29.1",
+      "title": "Устройство ж/б конструкций",
+      "parent_code": "12.4.29",
+      "source_row": 182,
+      "primary_class_ids": [
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.30",
+      "title": "Металлоконструкции",
+      "parent_code": "12.4",
+      "source_row": 183,
+      "primary_class_ids": [
+        17,
+        16,
+        12,
+        13,
+        14
+      ],
+      "episodic_class_ids": [
+        21
+      ]
+    },
+    {
+      "code": "12.4.30.1",
+      "title": "Металлоконструкции (фермы, балки, прогоны, надколонники, связи, козырьки, решетки приямков, лестницы)",
+      "parent_code": "12.4.30",
+      "source_row": 184,
+      "primary_class_ids": [
+        17,
+        16,
+        12,
+        13
+      ],
+      "episodic_class_ids": [
+        14,
+        21
+      ]
+    },
+    {
+      "code": "12.4.30.2",
+      "title": "Покрытие из профилированного листа",
+      "parent_code": "12.4.30",
+      "source_row": 185,
+      "primary_class_ids": [
+        17,
+        16,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        21
+      ]
+    },
+    {
+      "code": "12.4.30.3",
+      "title": "Огнезащита м/к",
+      "parent_code": "12.4.30",
+      "source_row": 186,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.4.30.4",
+      "title": "Ограждения",
+      "parent_code": "12.4.30",
+      "source_row": 187,
+      "primary_class_ids": [
+        4,
+        12,
+        16
+      ],
+      "episodic_class_ids": [
+        21,
+        13
+      ]
+    },
+    {
+      "code": "12.4.30.5",
+      "title": "Решетки",
+      "parent_code": "12.4.30",
+      "source_row": 188,
+      "primary_class_ids": [
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        16,
+        21,
+        5
+      ]
+    },
+    {
+      "code": "12.4.30.6",
+      "title": "Пожарные лестницы",
+      "parent_code": "12.4.30",
+      "source_row": 189,
+      "primary_class_ids": [
+        21,
+        16,
+        12
+      ],
+      "episodic_class_ids": [
+        4
+      ]
+    },
+    {
+      "code": "12.4.31",
+      "title": "Устройство пирога кровли",
+      "parent_code": "12.4",
+      "source_row": 190,
+      "primary_class_ids": [
+        17,
+        16,
+        21,
+        12,
+        14
+      ],
+      "episodic_class_ids": [
+        13
+      ]
+    },
+    {
+      "code": "12.4.31.1",
+      "title": "Пароизоляция",
+      "parent_code": "12.4.31",
+      "source_row": 191,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.2",
+      "title": "Утепление",
+      "parent_code": "12.4.31",
+      "source_row": 192,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.3",
+      "title": "Разуклонка ЦПР",
+      "parent_code": "12.4.31",
+      "source_row": 193,
+      "primary_class_ids": [
+        20,
+        12
+      ],
+      "episodic_class_ids": [
+        8,
+        21
+      ]
+    },
+    {
+      "code": "12.4.31.4",
+      "title": "Гидроизоляция 3 слоя",
+      "parent_code": "12.4.31",
+      "source_row": 194,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.5",
+      "title": "Покрытие козырьков",
+      "parent_code": "12.4.31",
+      "source_row": 195,
+      "primary_class_ids": [
+        16,
+        21,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        14,
+        13
+      ]
+    },
+    {
+      "code": "12.4.31.6",
+      "title": "Водосток с основной кровли, с кровли крылец",
+      "parent_code": "12.4.31",
+      "source_row": 196,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.7",
+      "title": "Устройство кровли. Тип 1",
+      "parent_code": "12.4.31",
+      "source_row": 197,
+      "primary_class_ids": [
+        21,
+        17
+      ],
+      "episodic_class_ids": [
+        16,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.8",
+      "title": "Устройство кровли. Тип 2",
+      "parent_code": "12.4.31",
+      "source_row": 198,
+      "primary_class_ids": [
+        21,
+        17
+      ],
+      "episodic_class_ids": [
+        16,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.9",
+      "title": "Устройство кровли. Тип 3",
+      "parent_code": "12.4.31",
+      "source_row": 199,
+      "primary_class_ids": [
+        21,
+        17
+      ],
+      "episodic_class_ids": [
+        16,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.10",
+      "title": "Устройство кровли. Тип 4",
+      "parent_code": "12.4.31",
+      "source_row": 200,
+      "primary_class_ids": [
+        21,
+        17
+      ],
+      "episodic_class_ids": [
+        16,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.11",
+      "title": "Устройство кровли. Тип 5",
+      "parent_code": "12.4.31",
+      "source_row": 201,
+      "primary_class_ids": [
+        21,
+        17
+      ],
+      "episodic_class_ids": [
+        16,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.12",
+      "title": "Устройство кровли. Тип 6",
+      "parent_code": "12.4.31",
+      "source_row": 202,
+      "primary_class_ids": [
+        21,
+        17
+      ],
+      "episodic_class_ids": [
+        16,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.13",
+      "title": "Устройство кровли. Тип 7",
+      "parent_code": "12.4.31",
+      "source_row": 203,
+      "primary_class_ids": [
+        21,
+        17
+      ],
+      "episodic_class_ids": [
+        16,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.14",
+      "title": "Устройство кровли. Тип 8",
+      "parent_code": "12.4.31",
+      "source_row": 204,
+      "primary_class_ids": [
+        21,
+        17
+      ],
+      "episodic_class_ids": [
+        16,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.15",
+      "title": "Козырьки из светопрозрачных металлических конструкций",
+      "parent_code": "12.4.31",
+      "source_row": 205,
+      "primary_class_ids": [
+        16,
+        21,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        14,
+        13
+      ]
+    },
+    {
+      "code": "12.4.31.16",
+      "title": "Дополнительные элементы и надстройки кровли",
+      "parent_code": "12.4.31",
+      "source_row": 206,
+      "primary_class_ids": [
+        21,
+        16,
+        12
+      ],
+      "episodic_class_ids": [
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.17",
+      "title": "Парапеты вентшахты",
+      "parent_code": "12.4.31",
+      "source_row": 207,
+      "primary_class_ids": [
+        21,
+        16,
+        12
+      ],
+      "episodic_class_ids": [
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.18",
+      "title": "Устройство кровли по железобетонному покрытию (Тип кровли 1)",
+      "parent_code": "12.4.31",
+      "source_row": 208,
+      "primary_class_ids": [
+        21,
+        17
+      ],
+      "episodic_class_ids": [
+        16,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.19",
+      "title": "Устройство кровли по покрытию из стального профлиста (Тип кровли 2)",
+      "parent_code": "12.4.31",
+      "source_row": 209,
+      "primary_class_ids": [
+        21,
+        17
+      ],
+      "episodic_class_ids": [
+        16,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.20",
+      "title": "Установка аэраторов",
+      "parent_code": "12.4.31",
+      "source_row": 210,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.21",
+      "title": "Устройство парапетной крышки, крышки фахверка, отделка фахверков парапета",
+      "parent_code": "12.4.31",
+      "source_row": 211,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.22",
+      "title": "Устройство эксплуатируемой дорожки",
+      "parent_code": "12.4.31",
+      "source_row": 212,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.23",
+      "title": "Устройство примыканий в парапету, воронкам",
+      "parent_code": "12.4.31",
+      "source_row": 213,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.24",
+      "title": "Устройство проходок через кровлю",
+      "parent_code": "12.4.31",
+      "source_row": 214,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.31.25",
+      "title": "Устройство шумозащитного экрана",
+      "parent_code": "12.4.31",
+      "source_row": 215,
+      "primary_class_ids": [
+        16,
+        12,
+        13
+      ],
+      "episodic_class_ids": [
+        21,
+        4
+      ]
+    },
+    {
+      "code": "12.4.32",
+      "title": "Устройство конструкций кровли",
+      "parent_code": "12.4",
+      "source_row": 216,
+      "primary_class_ids": [
+        17,
+        16,
+        12
+      ],
+      "episodic_class_ids": [
+        14,
+        13,
+        21
+      ]
+    },
+    {
+      "code": "12.4.33",
+      "title": "Установка ворот",
+      "parent_code": "12.4",
+      "source_row": 217,
+      "primary_class_ids": [
+        4,
+        12,
+        16
+      ],
+      "episodic_class_ids": [
+        1,
+        13,
+        21
+      ]
+    },
+    {
+      "code": "12.4.34",
+      "title": "Установка дверей деревянных",
+      "parent_code": "12.4",
+      "source_row": 218,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.4.35",
+      "title": "Установка внутренних металлических дверей",
+      "parent_code": "12.4",
+      "source_row": 219,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.4.36",
+      "title": "Установка наружных дверей",
+      "parent_code": "12.4",
+      "source_row": 220,
+      "primary_class_ids": [
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        16,
+        21,
+        14
+      ]
+    },
+    {
+      "code": "12.4.37",
+      "title": "Монтаж алюминиевых витражей (шторы противопожарные, алюминиевые витражи)",
+      "parent_code": "12.4",
+      "source_row": 221,
+      "primary_class_ids": [
+        21,
+        16,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        17
+      ]
+    },
+    {
+      "code": "12.4.38",
+      "title": "Установка оконных блоков ПВХ",
+      "parent_code": "12.4",
+      "source_row": 222,
+      "primary_class_ids": [
+        21,
+        16,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        5
+      ]
+    },
+    {
+      "code": "12.4.39",
+      "title": "Установка алюминиевых подоконников",
+      "parent_code": "12.4",
+      "source_row": 223,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.4.40",
+      "title": "Установка подоконников ГКЛВ с отделкой",
+      "parent_code": "12.4",
+      "source_row": 224,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.4.41",
+      "title": "Устройство теплоизоляции стен, в т.ч. укрытие плит утеплителя ветровлагозащитной пленкой (при необходимости)",
+      "parent_code": "12.4",
+      "source_row": 225,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.4.42",
+      "title": "Устройство вентилируемого навесного фасада из керамогранита",
+      "parent_code": "12.4",
+      "source_row": 226,
+      "primary_class_ids": [
+        21,
+        17,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        16
+      ]
+    },
+    {
+      "code": "12.4.43",
+      "title": "Облицовка цоколя крупноформатными панелями из керамогранита на растворе",
+      "parent_code": "12.4",
+      "source_row": 227,
+      "primary_class_ids": [
+        12,
+        14
+      ],
+      "episodic_class_ids": [
+        21,
+        16
+      ]
+    },
+    {
+      "code": "12.4.44",
+      "title": "Облицовка крылец и наружных лестниц нескользящей бетонной плитки с гранитной крошкой на клее",
+      "parent_code": "12.4",
+      "source_row": 228,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.45",
+      "title": "Устройство откосов и сливов из оцинкованной стали с полимерным покрытием",
+      "parent_code": "12.4",
+      "source_row": 229,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.4.46",
+      "title": "Навесной вентилируемый фасад из стеклофибробетона со вставками из стемалита",
+      "parent_code": "12.4",
+      "source_row": 230,
+      "primary_class_ids": [
+        21,
+        17,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        16
+      ]
+    },
+    {
+      "code": "12.4.47",
+      "title": "Облицовка цоколя гранитной плиткой на подсистеме вентилируемого фасада",
+      "parent_code": "12.4",
+      "source_row": 231,
+      "primary_class_ids": [
+        12,
+        14
+      ],
+      "episodic_class_ids": [
+        21,
+        16
+      ]
+    },
+    {
+      "code": "12.4.48",
+      "title": "Облицовка крылец и наружных лестниц гранитной плиткой на растворе",
+      "parent_code": "12.4",
+      "source_row": 232,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.4.49",
+      "title": "Металлические декоративные ламели",
+      "parent_code": "12.4",
+      "source_row": 233,
+      "primary_class_ids": [
+        21,
+        16,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        13
+      ]
+    },
+    {
+      "code": "12.4.50",
+      "title": "Облицовка керамогранитной плиткой внутренней поверхности приямков",
+      "parent_code": "12.4",
+      "source_row": 234,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.4.51",
+      "title": "Подшивка нависающих частей здания алюминиевой рейкой",
+      "parent_code": "12.4",
+      "source_row": 235,
+      "primary_class_ids": [
+        21,
+        16,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        13
+      ]
+    },
+    {
+      "code": "12.4.52",
+      "title": "Элементы фасада (логотипы, вывески, указатели, светильники, флагодержатели и пр.)",
+      "parent_code": "12.4",
+      "source_row": 236,
+      "primary_class_ids": [
+        21,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        16
+      ]
+    },
+    {
+      "code": "12.4.53",
+      "title": "Ограждения из нержавеющей стали",
+      "parent_code": "12.4",
+      "source_row": 237,
+      "primary_class_ids": [
+        4,
+        12,
+        16
+      ],
+      "episodic_class_ids": [
+        21,
+        13
+      ]
+    },
+    {
+      "code": "12.4.54",
+      "title": "Теплоизоляция фасада",
+      "parent_code": "12.4",
+      "source_row": 238,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.4.55",
+      "title": "Устройство гидроизоляции цоколя",
+      "parent_code": "12.4",
+      "source_row": 239,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.4.56",
+      "title": "Установка перфорированной фасадной кассеты",
+      "parent_code": "12.4",
+      "source_row": 240,
+      "primary_class_ids": [
+        21,
+        16,
+        14,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        13
+      ]
+    },
+    {
+      "code": "12.4.57",
+      "title": "Монтаж козырьков",
+      "parent_code": "12.4",
+      "source_row": 241,
+      "primary_class_ids": [
+        16,
+        21,
+        12
+      ],
+      "episodic_class_ids": [
+        17,
+        14,
+        13
+      ]
+    },
+    {
+      "code": "12.5",
+      "title": "Устройство инженерных систем",
+      "parent_code": "12",
+      "source_row": 242,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        13,
+        16,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.1",
+      "title": "Устройство наружных сетей",
+      "parent_code": "12.5",
+      "source_row": 243,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        16,
+        13
+      ]
+    },
+    {
+      "code": "12.5.1.1",
+      "title": "Теплосеть",
+      "parent_code": "12.5.1",
+      "source_row": 244,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        16,
+        13
+      ]
+    },
+    {
+      "code": "12.5.1.2",
+      "title": "Водоснабжение",
+      "parent_code": "12.5.1",
+      "source_row": 245,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        16,
+        13
+      ]
+    },
+    {
+      "code": "12.5.1.3",
+      "title": "Х/Б канализация",
+      "parent_code": "12.5.1",
+      "source_row": 246,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        16,
+        13
+      ]
+    },
+    {
+      "code": "12.5.1.4",
+      "title": "Ливневая канализация",
+      "parent_code": "12.5.1",
+      "source_row": 247,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        16,
+        13
+      ]
+    },
+    {
+      "code": "12.5.1.5",
+      "title": "Электроснабжение",
+      "parent_code": "12.5.1",
+      "source_row": 248,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        3,
+        16
+      ]
+    },
+    {
+      "code": "12.5.1.6",
+      "title": "Слаботочные сети",
+      "parent_code": "12.5.1",
+      "source_row": 249,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        3,
+        16
+      ]
+    },
+    {
+      "code": "12.5.1.7",
+      "title": "Устройство трубной канализации",
+      "parent_code": "12.5.1",
+      "source_row": 250,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        3,
+        16
+      ]
+    },
+    {
+      "code": "12.5.1.8",
+      "title": "Прокладка кабеля",
+      "parent_code": "12.5.1",
+      "source_row": 251,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        3,
+        16
+      ]
+    },
+    {
+      "code": "12.5.1.9",
+      "title": "Дизель-генераторная установка, в т.ч. фундамент под оборудование",
+      "parent_code": "12.5.1",
+      "source_row": 252,
+      "primary_class_ids": [
+        16,
+        12,
+        13,
+        8,
+        20
+      ],
+      "episodic_class_ids": [
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.1.10",
+      "title": "Наружные сети связи",
+      "parent_code": "12.5.1",
+      "source_row": 253,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        3,
+        16
+      ]
+    },
+    {
+      "code": "12.5.2",
+      "title": "Устройство внутренних сетей",
+      "parent_code": "12.5",
+      "source_row": 254,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.5.2.1",
+      "title": "Вентиляция и кондиционирование",
+      "parent_code": "12.5.2",
+      "source_row": 255,
+      "primary_class_ids": [
+        12,
+        14
+      ],
+      "episodic_class_ids": [
+        16,
+        6,
+        21
+      ]
+    },
+    {
+      "code": "12.5.2.2",
+      "title": "Электрика",
+      "parent_code": "12.5.2",
+      "source_row": 256,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.3",
+      "title": "Сантехника",
+      "parent_code": "12.5.2",
+      "source_row": 257,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.4",
+      "title": "Сети связи",
+      "parent_code": "12.5.2",
+      "source_row": 258,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.5",
+      "title": "Сети водоснабжения",
+      "parent_code": "12.5.2",
+      "source_row": 259,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.6",
+      "title": "Сети канализации",
+      "parent_code": "12.5.2",
+      "source_row": 260,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.7",
+      "title": "Система отопления",
+      "parent_code": "12.5.2",
+      "source_row": 261,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.8",
+      "title": "Ливневая канализация",
+      "parent_code": "12.5.2",
+      "source_row": 262,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.9",
+      "title": "Разработка грунта с креплением",
+      "parent_code": "12.5.2",
+      "source_row": 263,
+      "primary_class_ids": [
+        19,
+        16,
+        1
+      ],
+      "episodic_class_ids": [
+        12,
+        13,
+        8,
+        20
+      ]
+    },
+    {
+      "code": "12.5.2.10",
+      "title": "Устройство колодцев",
+      "parent_code": "12.5.2",
+      "source_row": 264,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        8,
+        16,
+        3
+      ]
+    },
+    {
+      "code": "12.5.2.11",
+      "title": "Прокладка труб",
+      "parent_code": "12.5.2",
+      "source_row": 265,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        0,
+        3,
+        16,
+        13
+      ]
+    },
+    {
+      "code": "12.5.2.12",
+      "title": "Индивидуальный тепловой пункт (ИТП)",
+      "parent_code": "12.5.2",
+      "source_row": 266,
+      "primary_class_ids": [
+        12,
+        13,
+        16,
+        6
+      ],
+      "episodic_class_ids": [
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.13",
+      "title": "Охранно-защитная дератизационная система (ОЗДС)",
+      "parent_code": "12.5.2",
+      "source_row": 267,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.14",
+      "title": "Система автоматизации теплового пункта (АТМ ИТП)",
+      "parent_code": "12.5.2",
+      "source_row": 268,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.15",
+      "title": "Силовое электрооборудование и электроосвещение теплового пункта (ЭОМ ИТП)",
+      "parent_code": "12.5.2",
+      "source_row": 269,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.16",
+      "title": "Система радиофикации (РФ)",
+      "parent_code": "12.5.2",
+      "source_row": 270,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.17",
+      "title": "Система электрочасофикации (ЭЧ)",
+      "parent_code": "12.5.2",
+      "source_row": 271,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.18",
+      "title": "Обеспечение доступа инвалидам (ОДИ)",
+      "parent_code": "12.5.2",
+      "source_row": 272,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.19",
+      "title": "Система вызова для МГН (СВМГН)",
+      "parent_code": "12.5.2",
+      "source_row": 273,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.20",
+      "title": "Система телефонизации, телевидения, доступа к сети передачи данных, домофонии, внутренних сетей (СС)",
+      "parent_code": "12.5.2",
+      "source_row": 274,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.21",
+      "title": "Система охранной сигнализации (ОС)",
+      "parent_code": "12.5.2",
+      "source_row": 275,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.22",
+      "title": "Система охранного телевидения (СОТ)",
+      "parent_code": "12.5.2",
+      "source_row": 276,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.23",
+      "title": "Система контроля управления доступом (СКУД)",
+      "parent_code": "12.5.2",
+      "source_row": 277,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.24",
+      "title": "Система автоматической установки пожарная сигнализация (АПС)",
+      "parent_code": "12.5.2",
+      "source_row": 278,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.25",
+      "title": "Система оповещения и управления эвакуацией (СОУЭ)",
+      "parent_code": "12.5.2",
+      "source_row": 279,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.26",
+      "title": "Система автоматики противопожарной защиты (АППЗ)",
+      "parent_code": "12.5.2",
+      "source_row": 280,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.27",
+      "title": "Автоматизация инженерных систем",
+      "parent_code": "12.5.2",
+      "source_row": 281,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.28",
+      "title": "Монтаж автоматической установки газового пожаротушения (АУГП)",
+      "parent_code": "12.5.2",
+      "source_row": 282,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.5.2.29",
+      "title": "Автоматическая установка водяного пожаротушения",
+      "parent_code": "12.5.2",
+      "source_row": 283,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6",
+      "title": "Отделочные работы",
+      "parent_code": "12",
+      "source_row": 284,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        21
+      ]
+    },
+    {
+      "code": "12.6.1",
+      "title": "Внешняя отделка",
+      "parent_code": "12.6",
+      "source_row": 285,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.1.1",
+      "title": "Черновая отделка",
+      "parent_code": "12.6.1",
+      "source_row": 286,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.1.2",
+      "title": "Чистовая отделка",
+      "parent_code": "12.6.1",
+      "source_row": 287,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.2",
+      "title": "Внутренняя отделка",
+      "parent_code": "12.6",
+      "source_row": 288,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        21
+      ]
+    },
+    {
+      "code": "12.6.2.1",
+      "title": "Черновая отделка",
+      "parent_code": "12.6.2",
+      "source_row": 289,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.2.2",
+      "title": "Чистовая отделка",
+      "parent_code": "12.6.2",
+      "source_row": 290,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.3",
+      "title": "Внутренняя отделка полов",
+      "parent_code": "12.6",
+      "source_row": 291,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        21
+      ]
+    },
+    {
+      "code": "12.6.3.1",
+      "title": "Черновая отделка полов",
+      "parent_code": "12.6.3",
+      "source_row": 292,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.3.2",
+      "title": "Чистовая отделка полов",
+      "parent_code": "12.6.3",
+      "source_row": 293,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.4",
+      "title": "Внутренняя отделка стен",
+      "parent_code": "12.6",
+      "source_row": 294,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        21
+      ]
+    },
+    {
+      "code": "12.6.4.1",
+      "title": "Черновая отделка стен",
+      "parent_code": "12.6.4",
+      "source_row": 295,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.4.2",
+      "title": "Чистовая отделка стен",
+      "parent_code": "12.6.4",
+      "source_row": 296,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.5",
+      "title": "Внутренняя отделка потолков",
+      "parent_code": "12.6",
+      "source_row": 297,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        21
+      ]
+    },
+    {
+      "code": "12.6.5.1",
+      "title": "Черновая отделка потолков",
+      "parent_code": "12.6.5",
+      "source_row": 298,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.5.2",
+      "title": "Чистовая отделка потолков",
+      "parent_code": "12.6.5",
+      "source_row": 299,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.6",
+      "title": "Внутренняя отделка дверей",
+      "parent_code": "12.6",
+      "source_row": 300,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        21
+      ]
+    },
+    {
+      "code": "12.6.6.1",
+      "title": "Монтаж внутренних дверей",
+      "parent_code": "12.6.6",
+      "source_row": 301,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.2",
+      "title": "Монтаж наружных дверей и ворот",
+      "parent_code": "12.6.6",
+      "source_row": 302,
+      "primary_class_ids": [
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        16,
+        21,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.3",
+      "title": "Двери автоматические раздвижные светопрозрачные",
+      "parent_code": "12.6.6",
+      "source_row": 303,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.4",
+      "title": "Двери алюминиевые наружные",
+      "parent_code": "12.6.6",
+      "source_row": 304,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.5",
+      "title": "Двери алюминиевые внутренние",
+      "parent_code": "12.6.6",
+      "source_row": 305,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.6",
+      "title": "Двери металлические наружные",
+      "parent_code": "12.6.6",
+      "source_row": 306,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.7",
+      "title": "Двери металлические взломостойкие с решеткой",
+      "parent_code": "12.6.6",
+      "source_row": 307,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.8",
+      "title": "Двери металлические рентгенозащитные",
+      "parent_code": "12.6.6",
+      "source_row": 308,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.9",
+      "title": "Двери глухие ПВХ",
+      "parent_code": "12.6.6",
+      "source_row": 309,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.10",
+      "title": "Двери комбинированные",
+      "parent_code": "12.6.6",
+      "source_row": 310,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.11",
+      "title": "Перегородки душевых кабинок из матового стекла",
+      "parent_code": "12.6.6",
+      "source_row": 311,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.12",
+      "title": "Сантехнические перегородки из HPL пластика",
+      "parent_code": "12.6.6",
+      "source_row": 312,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.13",
+      "title": "Трансформируемые перегородки",
+      "parent_code": "12.6.6",
+      "source_row": 313,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.14",
+      "title": "Люки",
+      "parent_code": "12.6.6",
+      "source_row": 314,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14
+      ]
+    },
+    {
+      "code": "12.6.6.15",
+      "title": "Люки герметические (кровля)",
+      "parent_code": "12.6.6",
+      "source_row": 315,
+      "primary_class_ids": [
+        21
+      ],
+      "episodic_class_ids": [
+        5,
+        12,
+        14
+      ]
+    },
+    {
+      "code": "12.6.7",
+      "title": "Внутренняя отделка (технические помещения)",
+      "parent_code": "12.6",
+      "source_row": 316,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        21
+      ]
+    },
+    {
+      "code": "12.6.7.1",
+      "title": "Черновая отделка",
+      "parent_code": "12.6.7",
+      "source_row": 317,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.7.2",
+      "title": "Чистовая отделка",
+      "parent_code": "12.6.7",
+      "source_row": 318,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.8",
+      "title": "Внутренняя отделка (пассажирские зоны)",
+      "parent_code": "12.6",
+      "source_row": 319,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        21
+      ]
+    },
+    {
+      "code": "12.6.8.1",
+      "title": "Черновая отделка",
+      "parent_code": "12.6.8",
+      "source_row": 320,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.8.2",
+      "title": "Чистовая отделка",
+      "parent_code": "12.6.8",
+      "source_row": 321,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.9",
+      "title": "Монтаж вертикального транспорта",
+      "parent_code": "12.6",
+      "source_row": 322,
+      "primary_class_ids": [
+        12,
+        13,
+        16,
+        6
+      ],
+      "episodic_class_ids": [
+        14
+      ]
+    },
+    {
+      "code": "12.6.10",
+      "title": "Монтаж оборудования по ТХЗ",
+      "parent_code": "12.6",
+      "source_row": 323,
+      "primary_class_ids": [
+        12,
+        6,
+        14
+      ],
+      "episodic_class_ids": [
+        16,
+        13
+      ]
+    },
+    {
+      "code": "12.6.11",
+      "title": "Монтаж мебели",
+      "parent_code": "12.6",
+      "source_row": 324,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.11.1",
+      "title": "Медицинская мебель (с учетом установки и распаковки) (не облагаемая НДС)",
+      "parent_code": "12.6.11",
+      "source_row": 325,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.11.2",
+      "title": "Медицинская мебель (с учетом установки и распаковки)",
+      "parent_code": "12.6.11",
+      "source_row": 326,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.11.3",
+      "title": "Мебель общего назначения (с учетом установки и распаковки)",
+      "parent_code": "12.6.11",
+      "source_row": 327,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.12",
+      "title": "Монтаж эскалаторов",
+      "parent_code": "12.6",
+      "source_row": 328,
+      "primary_class_ids": [
+        12,
+        13,
+        16,
+        6
+      ],
+      "episodic_class_ids": [
+        14
+      ]
+    },
+    {
+      "code": "12.6.13",
+      "title": "Монтаж оборудования",
+      "parent_code": "12.6",
+      "source_row": 329,
+      "primary_class_ids": [
+        12,
+        6,
+        14
+      ],
+      "episodic_class_ids": [
+        16,
+        13
+      ]
+    },
+    {
+      "code": "12.6.13.1",
+      "title": "Монтируемое оборудование",
+      "parent_code": "12.6.13",
+      "source_row": 330,
+      "primary_class_ids": [
+        12,
+        6,
+        14
+      ],
+      "episodic_class_ids": [
+        16,
+        13
+      ]
+    },
+    {
+      "code": "12.6.13.1.1",
+      "title": "Медицинское оборудование, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 331,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.2",
+      "title": "Медицинское оборудование, с учетом монтажа (не облагаемое НДС)",
+      "parent_code": "12.6.13.1",
+      "source_row": 332,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.3",
+      "title": "Офисное оборудование, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 333,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.4",
+      "title": "Оборудование и мебель конференц-зала, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 334,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.5",
+      "title": "Электро- и бытовая техника, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 335,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.6",
+      "title": "Хозяйственный инвентарь, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 336,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.7",
+      "title": "Периметр безопасности, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 337,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.8",
+      "title": "Спортивно-технологическое оборудование и спортивный инвентарь, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 338,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.9",
+      "title": "Учебное оборудование, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 339,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.10",
+      "title": "Учебное оборудование, с учетом монтажа (не облагаемое НДС)",
+      "parent_code": "12.6.13.1",
+      "source_row": 340,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.11",
+      "title": "Компьютеры и программное обеспечение, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 341,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5
+      ]
+    },
+    {
+      "code": "12.6.13.1.12",
+      "title": "Занавески, жалюзи и прочие предметы обстановки, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 342,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6
+      ]
+    },
+    {
+      "code": "12.6.13.1.13",
+      "title": "Кухонное оборудование и инвентарь, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 343,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.14",
+      "title": "Музыкальные инструменты и оборудование для залов, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 344,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.15",
+      "title": "Театральное оборудование, оборудование сцены (с учетом монтажа)",
+      "parent_code": "12.6.13.1",
+      "source_row": 345,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.16",
+      "title": "Светотехническое оборудование, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 346,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.1.17",
+      "title": "Торгово-технологическое оборудование, с учетом монтажа",
+      "parent_code": "12.6.13.1",
+      "source_row": 347,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "code": "12.6.13.2",
+      "title": "Немонтируемое оборудование",
+      "parent_code": "12.6.13",
+      "source_row": 348,
+      "primary_class_ids": [
+        12,
+        6,
+        14
+      ],
+      "episodic_class_ids": [
+        16,
+        13
+      ]
+    },
+    {
+      "code": "12.6.13.2.1",
+      "title": "Инструмент медицинский, расходные материалы (не облагаемое НДС)",
+      "parent_code": "12.6.13.2",
+      "source_row": 349,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.6.13.2.2",
+      "title": "Инструмент медицинский, расходные материалы",
+      "parent_code": "12.6.13.2",
+      "source_row": 350,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.6.13.2.3",
+      "title": "Хозяйственный инвентарь",
+      "parent_code": "12.6.13.2",
+      "source_row": 351,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "code": "12.7",
+      "title": "Благоустройство территории",
+      "parent_code": "12",
+      "source_row": 352,
+      "primary_class_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        10,
+        12,
+        24
+      ],
+      "episodic_class_ids": [
+        9,
+        16,
+        18,
+        21,
+        23
+      ]
+    },
+    {
+      "code": "12.7.1",
+      "title": "Устройство проездов и тротуаров",
+      "parent_code": "12.7",
+      "source_row": 353,
+      "primary_class_ids": [
+        0,
+        7,
+        2,
+        3,
+        18,
+        12
+      ],
+      "episodic_class_ids": [
+        9,
+        10,
+        11,
+        4
+      ]
+    },
+    {
+      "code": "12.7.1.1",
+      "title": "Устройство асфальтобетонного покрытия проездов, тротуаров, площадок с установкой бортового камня",
+      "parent_code": "12.7.1",
+      "source_row": 354,
+      "primary_class_ids": [
+        18,
+        3,
+        0
+      ],
+      "episodic_class_ids": [
+        9,
+        11
+      ]
+    },
+    {
+      "code": "12.7.1.2",
+      "title": "Устройство покрытий из тротуарной плитки с установкой бортового камня",
+      "parent_code": "12.7.1",
+      "source_row": 355,
+      "primary_class_ids": [
+        12,
+        7,
+        3
+      ],
+      "episodic_class_ids": [
+        4,
+        1
+      ]
+    },
+    {
+      "code": "12.7.1.3",
+      "title": "Устройство бетонных покрытий (отмостка)",
+      "parent_code": "12.7.1",
+      "source_row": 356,
+      "primary_class_ids": [
+        8,
+        20,
+        3
+      ],
+      "episodic_class_ids": [
+        12,
+        4
+      ]
+    },
+    {
+      "code": "12.7.1.4",
+      "title": "Устройство площадок с покрытием из резиновой крошки",
+      "parent_code": "12.7.1",
+      "source_row": 357,
+      "primary_class_ids": [],
+      "episodic_class_ids": [
+        5,
+        12,
+        7,
+        3
+      ]
+    },
+    {
+      "code": "12.7.1.5",
+      "title": "Установка водоотводных лотков",
+      "parent_code": "12.7.1",
+      "source_row": 358,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        16,
+        3
+      ]
+    },
+    {
+      "code": "12.7.1.6",
+      "title": "Устройство подпорных стен",
+      "parent_code": "12.7.1",
+      "source_row": 359,
+      "primary_class_ids": [
+        1,
+        8,
+        20,
+        16
+      ],
+      "episodic_class_ids": [
+        12,
+        0
+      ]
+    },
+    {
+      "code": "12.7.1.7",
+      "title": "Обустройство дорог: установка знаков, нанесение разметки",
+      "parent_code": "12.7.1",
+      "source_row": 360,
+      "primary_class_ids": [
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        21,
+        5,
+        23
+      ]
+    },
+    {
+      "code": "12.7.2",
+      "title": "Озеленение",
+      "parent_code": "12.7",
+      "source_row": 361,
+      "primary_class_ids": [
+        24,
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        9
+      ]
+    },
+    {
+      "code": "12.7.2.1",
+      "title": "Устройство газона рулонного",
+      "parent_code": "12.7.2",
+      "source_row": 362,
+      "primary_class_ids": [
+        24,
+        12
+      ],
+      "episodic_class_ids": [
+        7,
+        9
+      ]
+    },
+    {
+      "code": "12.7.2.2",
+      "title": "Устройство газона посевного",
+      "parent_code": "12.7.2",
+      "source_row": 363,
+      "primary_class_ids": [
+        24
+      ],
+      "episodic_class_ids": [
+        9,
+        12
+      ]
+    },
+    {
+      "code": "12.7.2.3",
+      "title": "Устройство цветников",
+      "parent_code": "12.7.2",
+      "source_row": 364,
+      "primary_class_ids": [
+        24
+      ],
+      "episodic_class_ids": [
+        1,
+        12,
+        9
+      ]
+    },
+    {
+      "code": "12.7.2.4",
+      "title": "Посадка деревьев",
+      "parent_code": "12.7.2",
+      "source_row": 365,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        16,
+        9,
+        24
+      ]
+    },
+    {
+      "code": "12.7.2.5",
+      "title": "Посадка кустарников",
+      "parent_code": "12.7.2",
+      "source_row": 366,
+      "primary_class_ids": [
+        24,
+        12
+      ],
+      "episodic_class_ids": [
+        9,
+        1
+      ]
+    },
+    {
+      "code": "12.7.3",
+      "title": "Установка МАФов",
+      "parent_code": "12.7",
+      "source_row": 367,
+      "primary_class_ids": [
+        4,
+        12,
+        16
+      ],
+      "episodic_class_ids": [
+        13,
+        1
+      ]
+    },
+    {
+      "code": "12.7.4",
+      "title": "Вертикальная планировка",
+      "parent_code": "12.7",
+      "source_row": 368,
+      "primary_class_ids": [
+        1,
+        0,
+        7,
+        10,
+        2,
+        3
+      ],
+      "episodic_class_ids": [
+        9
+      ]
+    },
+    {
+      "code": "12.7.4.1",
+      "title": "Устройство насыпи",
+      "parent_code": "12.7.4",
+      "source_row": 369,
+      "primary_class_ids": [
+        0,
+        7,
+        10,
+        2,
+        3
+      ],
+      "episodic_class_ids": [
+        9
+      ]
+    },
+    {
+      "code": "12.7.4.2",
+      "title": "Устройство выемки",
+      "parent_code": "12.7.4",
+      "source_row": 370,
+      "primary_class_ids": [
+        1,
+        0
+      ],
+      "episodic_class_ids": [
+        10,
+        7
+      ]
+    },
+    {
+      "code": "12.7.5",
+      "title": "Посадка зеленых насаждений",
+      "parent_code": "12.7",
+      "source_row": 371,
+      "primary_class_ids": [
+        24,
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        9
+      ]
+    },
+    {
+      "code": "12.7.6",
+      "title": "Ограждение территории",
+      "parent_code": "12.7",
+      "source_row": 372,
+      "primary_class_ids": [
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        1,
+        16,
+        21
+      ]
+    },
+    {
+      "code": "12.7.6.1",
+      "title": "Ограждение территории, в т.ч. ворота, калитки, шлагбаумы",
+      "parent_code": "12.7.6",
+      "source_row": 373,
+      "primary_class_ids": [
+        4,
+        12,
+        16
+      ],
+      "episodic_class_ids": [
+        1,
+        13,
+        21
+      ]
+    },
+    {
+      "code": "12.7.6.2",
+      "title": "Ограждение спортивной площадки",
+      "parent_code": "12.7.6",
+      "source_row": 374,
+      "primary_class_ids": [
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        1,
+        16,
+        21
+      ]
+    },
+    {
+      "code": "12.7.7",
+      "title": "Устройство пешеходных зон и тротуаров",
+      "parent_code": "12.7",
+      "source_row": 375,
+      "primary_class_ids": [
+        12,
+        7,
+        3,
+        4,
+        21
+      ],
+      "episodic_class_ids": [
+        1,
+        9,
+        16,
+        8,
+        20
+      ]
+    },
+    {
+      "code": "12.7.7.1",
+      "title": "Наружное освещение",
+      "parent_code": "12.7.7",
+      "source_row": 376,
+      "primary_class_ids": [
+        4,
+        12,
+        21
+      ],
+      "episodic_class_ids": [
+        1,
+        16
+      ]
+    },
+    {
+      "code": "12.7.7.2",
+      "title": "Прокладка кабеля",
+      "parent_code": "12.7.7",
+      "source_row": 377,
+      "primary_class_ids": [
+        1,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        3,
+        16
+      ]
+    },
+    {
+      "code": "12.7.7.3",
+      "title": "Устройство фундаментов опор",
+      "parent_code": "12.7.7",
+      "source_row": 378,
+      "primary_class_ids": [
+        1,
+        8,
+        20,
+        4
+      ],
+      "episodic_class_ids": [
+        12
+      ]
+    },
+    {
+      "code": "12.7.7.4",
+      "title": "Установка опор",
+      "parent_code": "12.7.7",
+      "source_row": 379,
+      "primary_class_ids": [
+        4,
+        16,
+        12,
+        21
+      ],
+      "episodic_class_ids": [
+        13
+      ]
+    },
+    {
+      "code": "12.7.7.5",
+      "title": "Архитектурно-художественная подсветка здания",
+      "parent_code": "12.7.7",
+      "source_row": 380,
+      "primary_class_ids": [
+        21,
+        4,
+        12
+      ],
+      "episodic_class_ids": [
+        5,
+        16
+      ]
+    }
+  ]
+}

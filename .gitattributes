@@ -1,0 +1,2 @@
+# The approved manifest SHA must be identical on Linux CI and Windows CD.
+models/yolo26m/manifest.json text eol=lf

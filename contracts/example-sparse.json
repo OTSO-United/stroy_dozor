@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "id": "demo-window-sparse",
+  "project_id": "demo-site",
+  "zone_version_id": "zone-a-v1",
+  "run_id": "demo-run",
+  "equipment_class": "excavator",
+  "start": "2026-09-11T06:00:00Z",
+  "end": "2026-09-11T06:15:00Z",
+  "revision": 1,
+  "mode": "sparse_snapshots",
+  "expected_samples": 5,
+  "usable_samples": 4,
+  "coverage_ratio": 0.8,
+  "presence_sample_ratio": 0.75,
+  "observed_machine_seconds": null,
+  "evidence_ids": ["demo-frame-1", "demo-frame-2", "demo-frame-3", "demo-frame-4"],
+  "limitations": ["activity_between_snapshots_unknown"],
+  "synthetic": true
+}

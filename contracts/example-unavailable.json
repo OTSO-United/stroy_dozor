@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "id": "demo-window-unavailable",
+  "project_id": "demo-site",
+  "zone_version_id": "zone-a-v1",
+  "run_id": "demo-run",
+  "equipment_class": "excavator",
+  "start": "2026-09-11T06:00:00Z",
+  "end": "2026-09-11T06:15:00Z",
+  "revision": 1,
+  "mode": "insufficient_data",
+  "expected_samples": 5,
+  "usable_samples": 0,
+  "coverage_ratio": 0,
+  "presence_sample_ratio": null,
+  "observed_machine_seconds": null,
+  "evidence_ids": [],
+  "limitations": ["camera_unavailable"],
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+# Requires a compatible NVIDIA driver and GPU access from Docker.
+services:
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.gpu
+      args:
+        CPU_IMAGE: ${CPU_IMAGE:-stroykontur:local}
+    image: ${GPU_IMAGE:-stroykontur:gpu}
+    environment:
+      REQUIRE_CUDA: "1"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

@@ -1,0 +1,223 @@
+[
+  {
+    "case": "dual_findings",
+    "value": {
+      "schema_version": "0.2",
+      "scope": "snapshot",
+      "id": "a-demo-1",
+      "project_id": "project-demo",
+      "media_id": "synthetic-image-1",
+      "observation_id": "obs-demo-1",
+      "run_id": "run-synthetic",
+      "binding_version": "binding-demo-v1",
+      "context": {
+        "basis": "manual_scenario",
+        "version": "context-demo-v1",
+        "complete_work_set": true,
+        "work_ids": [
+          "earth-demo"
+        ]
+      },
+      "rule_bundle_version": "rules-demo-v1",
+      "captured_at": null,
+      "mode": "sparse_snapshots",
+      "readiness": "ready",
+      "observed_machine_seconds": null,
+      "findings": [
+        {
+          "id": "f-missing",
+          "type": "potential_missing",
+          "equipment_class": "dump_truck",
+          "work_ids": [
+            "earth-demo"
+          ],
+          "rule_version": "rule-loading-demo-v1",
+          "premises": [
+            "class_supported",
+            "zone_visible",
+            "snapshot_expectation_confirmed",
+            "required_group_not_observed"
+          ],
+          "explanation": "В ручном сценарии погрузки ожидается самосвал; в области снимка он не обнаружен.",
+          "evidence": {
+            "media_id": "synthetic-image-1",
+            "kind": "view_region",
+            "reference_id": "region-demo"
+          }
+        },
+        {
+          "id": "f-unexpected",
+          "type": "potential_unexpected",
+          "equipment_class": "roller",
+          "work_ids": [
+            "earth-demo"
+          ],
+          "rule_version": "rule-unexpected-demo-v1",
+          "premises": [
+            "class_and_zone_confident",
+            "complete_work_set",
+            "not_allowed_by_any_active_work",
+            "no_applicable_exception"
+          ],
+          "explanation": "Видимый каток не объясняется полным набором работ ручного сценария.",
+          "evidence": {
+            "media_id": "synthetic-image-1",
+            "kind": "detection",
+            "reference_id": "detection-demo-roller"
+          }
+        }
+      ],
+      "unknown_checks": [],
+      "limitations": [
+        "Синтетический сценарий, не результат модели.",
+        "Один снимок не доказывает наличие или отсутствие за смену."
+      ],
+      "synthetic": true
+    }
+  },
+  {
+    "case": "no_context",
+    "value": {
+      "schema_version": "0.2",
+      "scope": "snapshot",
+      "id": "a-no-context",
+      "project_id": "project-demo",
+      "media_id": "synthetic-image-1",
+      "observation_id": "obs-demo-1",
+      "run_id": "run-synthetic",
+      "binding_version": "binding-demo-v1",
+      "context": {
+        "basis": "unknown",
+        "version": null,
+        "complete_work_set": false,
+        "work_ids": []
+      },
+      "rule_bundle_version": null,
+      "captured_at": null,
+      "mode": "sparse_snapshots",
+      "readiness": "not_evaluated",
+      "observed_machine_seconds": null,
+      "findings": [],
+      "unknown_checks": [
+        {
+          "check": "assessment",
+          "reason": "missing_work_context"
+        }
+      ],
+      "limitations": [
+        "Синтетический сценарий, не результат модели.",
+        "Один снимок не доказывает наличие или отсутствие за смену."
+      ],
+      "synthetic": true
+    }
+  },
+  {
+    "case": "no_view",
+    "value": {
+      "schema_version": "0.2",
+      "scope": "snapshot",
+      "id": "a-no-view",
+      "project_id": "project-demo",
+      "media_id": "synthetic-image-1",
+      "observation_id": "obs-demo-1",
+      "run_id": "run-synthetic",
+      "binding_version": "binding-demo-v1",
+      "context": {
+        "basis": "manual_scenario",
+        "version": "context-demo-v1",
+        "complete_work_set": true,
+        "work_ids": [
+          "earth-demo"
+        ]
+      },
+      "rule_bundle_version": "rules-demo-v1",
+      "captured_at": null,
+      "mode": "insufficient_data",
+      "readiness": "not_evaluated",
+      "observed_machine_seconds": null,
+      "findings": [],
+      "unknown_checks": [
+        {
+          "check": "assessment",
+          "reason": "zone_not_observable"
+        }
+      ],
+      "limitations": [
+        "Синтетический сценарий, не результат модели.",
+        "Один снимок не доказывает наличие или отсутствие за смену."
+      ],
+      "synthetic": true
+    }
+  },
+  {
+    "case": "compatible",
+    "value": {
+      "schema_version": "0.2",
+      "scope": "snapshot",
+      "id": "a-demo-1",
+      "project_id": "project-demo",
+      "media_id": "synthetic-image-1",
+      "observation_id": "obs-demo-1",
+      "run_id": "run-synthetic",
+      "binding_version": "binding-demo-v1",
+      "context": {
+        "basis": "manual_scenario",
+        "version": "context-demo-v1",
+        "complete_work_set": true,
+        "work_ids": [
+          "earth-demo"
+        ]
+      },
+      "rule_bundle_version": "rules-demo-v1",
+      "captured_at": null,
+      "mode": "sparse_snapshots",
+      "readiness": "ready",
+      "observed_machine_seconds": null,
+      "findings": [],
+      "unknown_checks": [],
+      "limitations": [
+        "Синтетический сценарий, не результат модели.",
+        "Один снимок не доказывает наличие или отсутствие за смену."
+      ],
+      "synthetic": true
+    }
+  },
+  {
+    "case": "window_unknown",
+    "value": {
+      "schema_version": "0.2",
+      "scope": "snapshot",
+      "id": "a-window-required",
+      "project_id": "project-demo",
+      "media_id": "synthetic-image-1",
+      "observation_id": "obs-demo-1",
+      "run_id": "run-synthetic",
+      "binding_version": "binding-demo-v1",
+      "context": {
+        "basis": "manual_scenario",
+        "version": "context-demo-v1",
+        "complete_work_set": true,
+        "work_ids": [
+          "earth-demo"
+        ]
+      },
+      "rule_bundle_version": "rules-demo-v1",
+      "captured_at": null,
+      "mode": "sparse_snapshots",
+      "readiness": "partial",
+      "observed_machine_seconds": null,
+      "findings": [],
+      "unknown_checks": [
+        {
+          "check": "required:dump_truck",
+          "reason": "time_window_required_but_only_snapshot_available"
+        }
+      ],
+      "limitations": [
+        "Синтетический сценарий, не результат модели.",
+        "Один снимок не доказывает наличие или отсутствие за смену."
+      ],
+      "synthetic": true
+    }
+  }
+]

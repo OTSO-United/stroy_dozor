@@ -1,0 +1,189 @@
+<style>
+#stroykontur-demo{--sk-bg:light-dark(#f4f5f7,#15191e);--sk-panel:light-dark(#ffffff,#1e242b);--sk-ink:light-dark(#1f2933,#eef2f5);--sk-muted:light-dark(#5b6774,#a9b5c1);--sk-line:light-dark(#dce2e7,#3a444f);--sk-accent:light-dark(#146b61,#77c6b6);--sk-soft:light-dark(#e7f2ee,#233f39);--sk-warn:light-dark(#8c5710,#f0bf6c);--sk-warn-bg:light-dark(#fff2d8,#40331f);--sk-scene:light-dark(#e1e5e6,#2d363a);--sk-earth:light-dark(#d4c3a4,#635b48);--sk-road:light-dark(#b6bec1,#4d5961);--sk-building:light-dark(#c5cfd2,#3a4c54);--sk-machine:light-dark(#bd871c,#d2a94c);--sk-radius:12px;font:400 14px/1.5 "Segoe UI",system-ui,sans-serif;color:var(--sk-ink);background:var(--sk-bg);border:1px solid var(--sk-line);border-radius:var(--sk-radius);overflow:hidden;max-width:100%;color-scheme:light dark}
+#stroykontur-demo *{box-sizing:border-box}
+#stroykontur-demo h1,#stroykontur-demo h2,#stroykontur-demo h3,#stroykontur-demo p{margin:0}
+#stroykontur-demo h1{font-size:23px;line-height:1.25;font-weight:500}
+#stroykontur-demo h2{font-size:16px;font-weight:500}
+#stroykontur-demo h3{font-size:14px;font-weight:500}
+#stroykontur-demo button,#stroykontur-demo select{font:inherit;color:var(--sk-ink);background:var(--sk-panel);border:1px solid var(--sk-line);border-radius:8px;padding:7px 10px;cursor:pointer;max-width:100%}
+#stroykontur-demo button:hover{border-color:var(--sk-accent)}
+#stroykontur-demo button:disabled{cursor:default;opacity:.65}
+#stroykontur-demo button[aria-pressed=true],#stroykontur-demo button[aria-selected=true]{background:var(--sk-soft);color:var(--sk-accent);border-color:var(--sk-accent)}
+#stroykontur-demo .sk-top{display:flex;justify-content:space-between;gap:16px;padding:18px 22px;background:var(--sk-panel);border-bottom:1px solid var(--sk-line);align-items:center;flex-wrap:wrap}
+#stroykontur-demo .sk-brand{font-size:19px;letter-spacing:-.4px;font-weight:500}
+#stroykontur-demo .sk-brand span{color:var(--sk-accent)}
+#stroykontur-demo .sk-meta{font-size:12px;color:var(--sk-muted)}
+#stroykontur-demo .sk-demo{font-size:12px;padding:4px 9px;border:1px solid var(--sk-line);border-radius:6px;color:var(--sk-muted)}
+#stroykontur-demo .sk-shell{display:grid;grid-template-columns:155px minmax(0,1fr)}
+#stroykontur-demo .sk-nav{padding:22px 12px;border-right:1px solid var(--sk-line);background:var(--sk-panel)}
+#stroykontur-demo .sk-nav button{display:block;width:100%;text-align:left;margin-bottom:8px;border-color:transparent}
+#stroykontur-demo .sk-nav .sk-meta{padding:4px 10px 12px}
+#stroykontur-demo .sk-main{padding:24px;min-width:0}
+#stroykontur-demo .sk-heading{display:flex;gap:12px;justify-content:space-between;align-items:start;flex-wrap:wrap;margin-bottom:20px}
+#stroykontur-demo .sk-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;align-items:end}
+#stroykontur-demo .sk-controls label{display:grid;gap:5px;font-size:12px;color:var(--sk-muted);flex:1 1 150px}
+#stroykontur-demo .sk-controls select{font-size:14px;width:100%}
+#stroykontur-demo .sk-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(230px,1fr);gap:16px;align-items:stretch}
+#stroykontur-demo .sk-panel{background:var(--sk-panel);border:1px solid var(--sk-line);border-radius:var(--sk-radius);min-width:0}
+#stroykontur-demo .sk-panelhead{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px;flex-wrap:wrap}
+#stroykontur-demo .sk-panelhead button{font-size:12px;padding:5px 8px}
+#stroykontur-demo .sk-scene{position:relative;background:var(--sk-scene);aspect-ratio:1.38;min-height:225px;overflow:hidden}
+#stroykontur-demo .sk-scene svg{display:block;width:100%;height:100%}
+#stroykontur-demo .sk-scene .sk-ground{fill:var(--sk-scene)}
+#stroykontur-demo .sk-scene .sk-earth{fill:var(--sk-earth)}
+#stroykontur-demo .sk-scene .sk-road{fill:var(--sk-road)}
+#stroykontur-demo .sk-scene .sk-building{fill:var(--sk-building);stroke:var(--sk-muted);stroke-width:2}
+#stroykontur-demo .sk-scene .sk-machine{fill:var(--sk-machine);stroke:var(--sk-ink);stroke-width:2}
+#stroykontur-demo .sk-scene .sk-outline{fill:none;stroke:var(--sk-accent);stroke-width:2;stroke-dasharray:8 6}
+#stroykontur-demo .sk-camera-label{position:absolute;left:12px;top:10px;background:var(--sk-panel);border:1px solid var(--sk-line);padding:3px 7px;border-radius:4px;font-size:11px}
+#stroykontur-demo .sk-zonelabel{position:absolute;right:12px;bottom:12px;font-size:12px;background:var(--sk-panel);padding:4px 8px;border-radius:4px}
+#stroykontur-demo .sk-box{position:absolute;left:20%;top:44%;width:24%;height:27%;border:2px solid var(--sk-accent)}
+#stroykontur-demo .sk-box span{position:absolute;left:-2px;bottom:100%;font-size:11px;color:var(--sk-accent);background:var(--sk-panel);padding:2px 5px;white-space:nowrap;border-radius:4px 4px 0 0}
+#stroykontur-demo .sk-box.sk-resource{left:66%;top:62%;width:20%;height:23%}
+#stroykontur-demo .sk-offline{position:absolute;inset:0;display:grid;place-content:center;text-align:center;gap:8px;padding:24px;background:var(--sk-bg);color:var(--sk-muted)}
+#stroykontur-demo .sk-offline strong{font-size:18px;font-weight:500;color:var(--sk-ink)}
+#stroykontur-demo [hidden]{display:none!important}
+#stroykontur-demo .sk-caption{padding:12px 16px;font-size:12px;color:var(--sk-muted)}
+#stroykontur-demo .sk-assessment{padding:18px;display:flex;flex-direction:column;gap:14px}
+#stroykontur-demo .sk-status{align-self:start;background:var(--sk-warn-bg);color:var(--sk-warn);font-size:12px;padding:4px 8px;border-radius:5px}
+#stroykontur-demo .sk-status[data-status=supports_plan]{background:var(--sk-soft);color:var(--sk-accent)}
+#stroykontur-demo .sk-status[data-status=insufficient_evidence]{background:var(--sk-bg);color:var(--sk-muted)}
+#stroykontur-demo .sk-explanation{color:var(--sk-muted);font-size:13px}
+#stroykontur-demo .sk-resource-row{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--sk-line);padding-top:10px}
+#stroykontur-demo .sk-count{font-variant-numeric:tabular-nums;font-weight:500}
+#stroykontur-demo .sk-action{margin-top:auto!important;background:var(--sk-soft)!important;color:var(--sk-accent)!important}
+#stroykontur-demo .sk-timeline{margin-top:16px;padding:16px}
+#stroykontur-demo .sk-timelinehead{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+#stroykontur-demo .sk-lane{display:grid;grid-template-columns:112px minmax(0,1fr);gap:12px;align-items:center;margin-top:10px;font-size:12px}
+#stroykontur-demo .sk-axis{display:flex;justify-content:space-between;color:var(--sk-muted)}
+#stroykontur-demo .sk-track{display:flex;gap:4px;align-items:center;min-height:22px}
+#stroykontur-demo .sk-slot{flex:1;height:20px;border-radius:3px;background:var(--sk-soft)}
+#stroykontur-demo .sk-slot[data-kind=plan]{background:var(--sk-building)}
+#stroykontur-demo .sk-slot[data-kind=missing]{background:var(--sk-warn-bg)}
+#stroykontur-demo .sk-slot[data-kind=gap]{background:repeating-linear-gradient(135deg,var(--sk-bg),var(--sk-bg) 4px,var(--sk-line) 4px,var(--sk-line) 6px)}
+#stroykontur-demo .sk-slot[data-kind=sample]{height:8px;flex:0 0 8px;background:var(--sk-accent);border-radius:50%}
+#stroykontur-demo .sk-slot[data-kind=sample-missing]{height:8px;flex:0 0 8px;background:var(--sk-warn);border-radius:50%}
+#stroykontur-demo .sk-track.sk-sparse{display:grid;grid-template-columns:repeat(5,1fr)}
+#stroykontur-demo .sk-sparse .sk-slot{width:8px;height:8px;justify-self:center;border-radius:50%}
+#stroykontur-demo .sk-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:11px;color:var(--sk-muted)}
+#stroykontur-demo .sk-legend span::before{content:"";display:inline-block;width:9px;height:9px;background:var(--sk-soft);margin-right:5px;border-radius:2px}
+#stroykontur-demo .sk-legend .sk-legendgap::before{background:var(--sk-line)}
+#stroykontur-demo .sk-legend .sk-legendwarn::before{background:var(--sk-warn-bg)}
+#stroykontur-demo .sk-footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:16px;font-size:11px;color:var(--sk-muted)}
+#stroykontur-demo .sk-worklist{display:grid;gap:12px;margin-top:16px}
+#stroykontur-demo .sk-work{display:grid;grid-template-columns:1fr auto;gap:12px;padding:16px;align-items:center}
+#stroykontur-demo .sk-work p{margin-top:4px;color:var(--sk-muted);font-size:13px}
+#stroykontur-demo .sk-reviewlist{padding:18px;list-style:none;margin:16px 0 0}
+#stroykontur-demo .sk-reviewlist li+li{border-top:1px solid var(--sk-line);margin-top:12px;padding-top:12px}
+#stroykontur-demo .sk-reviewlist small{display:block;color:var(--sk-muted)}
+#stroykontur-demo.sk-compact .sk-main{padding:16px}
+@media(max-width:850px){#stroykontur-demo .sk-shell{grid-template-columns:1fr}#stroykontur-demo .sk-nav{display:flex;gap:6px;flex-wrap:wrap;padding:10px 18px;border-right:0;border-bottom:1px solid var(--sk-line)}#stroykontur-demo .sk-nav .sk-meta{display:none}#stroykontur-demo .sk-nav button{width:auto;margin:0}}
+@media(max-width:600px){#stroykontur-demo .sk-grid{grid-template-columns:1fr}#stroykontur-demo .sk-main{padding:16px}#stroykontur-demo .sk-top{padding:14px 16px}#stroykontur-demo h1{font-size:21px}#stroykontur-demo .sk-controls label{flex-basis:100%}#stroykontur-demo .sk-work{grid-template-columns:1fr}#stroykontur-demo .sk-lane{grid-template-columns:80px minmax(0,1fr);gap:8px}}
+@media(pointer:coarse){#stroykontur-demo button,#stroykontur-demo select{min-height:44px}#stroykontur-demo select{font-size:16px}}
+</style>
+<section id="stroykontur-demo" aria-label="СтройДозор: демонстрационный интерфейс">
+  <header class="sk-top">
+    <div class="sk-brand">Строй<span>Контур</span> <span class="sk-meta">/ мониторинг работ</span></div>
+    <span class="sk-demo">АРХИВ 11.09 · temporal-макет · все данные синтетические</span>
+  </header>
+  <div class="sk-shell">
+    <nav class="sk-nav" aria-label="Разделы проекта">
+      <div class="sk-meta">РАБОЧАЯ ОБЛАСТЬ</div>
+      <button type="button" data-page="overview" aria-pressed="true">Обзор площадки</button>
+      <button type="button" data-page="plan" aria-pressed="false">Работы и план</button>
+      <button type="button" data-page="reviews" aria-pressed="false">Журнал проверок</button>
+    </nav>
+    <main class="sk-main">
+      <div class="sk-heading">
+        <div><div class="sk-meta">Демонстрационный объект / корпус 02</div><h1>План, проверяемый фактами</h1></div>
+        <span class="sk-meta">11 сентября 2026<br>Окно 09:00–09:15 МСК</span>
+      </div>
+      <div class="sk-controls">
+        <label>Ситуация для демонстрации
+          <select data-control="scenario"><option value="missing">Нет ожидаемого ресурса</option><option value="normal">Ресурс наблюдается</option><option value="unavailable">Камера недоступна</option></select>
+        </label>
+        <label>Источник наблюдений
+          <select data-control="mode"><option value="dense_video">Плотное видео</option><option value="sparse_snapshots">Редкие снимки</option></select>
+        </label>
+        <label>Проверяемая работа
+          <select data-control="work"><option value="earth">Выемка грунта</option><option value="concrete">Бетонирование</option></select>
+        </label>
+      </div>
+      <div data-panel="overview">
+        <div class="sk-grid">
+          <section class="sk-panel">
+            <div class="sk-panelhead"><div><h2 data-field="cameraTitle">Камера 01 · Котлован А</h2><div class="sk-meta" data-field="evidenceTime">11.09.2026 · 09:14:32 МСК</div></div><button type="button" data-action="boxes" aria-pressed="true">Рамки</button></div>
+            <div class="sk-scene" role="img" aria-label="Схематическое изображение стройплощадки, не реальный кадр камеры">
+              <svg viewBox="0 0 640 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <rect width="640" height="460" class="sk-ground"/>
+                <path d="M0 350L640 115L640 190L0 425Z" class="sk-road"/>
+                <path d="M60 132L290 60L420 153L166 243Z" class="sk-earth"/>
+                <path d="M76 140L285 77L390 150L171 223Z" fill="none" stroke="var(--sk-muted)" stroke-width="3"/>
+                <path d="M338 66L509 32L586 106L407 144Z" class="sk-building"/>
+                <path d="M407 144L586 106L586 178L408 218Z" class="sk-building"/>
+                <path d="M338 66L407 144L408 218L338 138Z" class="sk-building"/>
+                <path d="M360 98L532 63M383 126L557 88M454 135L454 199M501 124L501 189M549 114L549 181" fill="none" stroke="var(--sk-muted)" stroke-width="2" opacity=".5"/>
+                <path d="M78 249L261 182L340 322L148 395Z" class="sk-outline"/>
+                <g data-scene-earth>
+                  <rect x="132" y="265" width="80" height="20" rx="9" fill="var(--sk-muted)" transform="rotate(-18 172 275)"/>
+                  <rect x="158" y="230" width="46" height="41" rx="5" class="sk-machine"/>
+                  <rect x="167" y="231" width="23" height="18" fill="var(--sk-building)"/>
+                  <path d="M201 243L230 209L264 224L259 248" fill="none" stroke="var(--sk-machine)" stroke-width="12"/>
+                  <path d="M249 243L274 247L263 263L248 257Z" class="sk-machine"/>
+                </g>
+                <g data-scene-concrete style="display:none">
+                  <path d="M170 294L170 183M187 294L187 183M170 285L187 267L170 248L187 229L170 210L187 190M126 184L269 184L180 154Z" fill="none" stroke="var(--sk-machine)" stroke-width="7"/>
+                  <path d="M249 186L249 245" fill="none" stroke="var(--sk-muted)" stroke-width="3"/>
+                  <rect x="159" y="289" width="40" height="15" class="sk-machine"/>
+                  <rect x="238" y="245" width="22" height="17" class="sk-building"/>
+                </g>
+                <g data-scene-resource>
+                  <rect x="431" y="315" width="88" height="43" rx="4" class="sk-machine" transform="rotate(-18 475 336)"/>
+                  <rect x="446" y="315" width="48" height="36" rx="3" fill="var(--sk-earth)" transform="rotate(-18 470 333)"/>
+                  <path d="M508 312L525 306L537 335L518 340Z" class="sk-building"/>
+                  <ellipse data-scene-drum cx="472" cy="331" rx="26" ry="16" fill="var(--sk-building)" stroke="var(--sk-muted)" stroke-width="2" style="display:none"/>
+                </g>
+              </svg>
+              <div class="sk-camera-label">Схема · не реальное видео</div>
+              <div class="sk-zonelabel" data-field="zone">Котлован А</div>
+              <div class="sk-box" data-box="machine"><span data-field="machineLabel">Экскаватор</span></div>
+              <div class="sk-box sk-resource" data-box="resource"><span data-field="resourceLabel">Самосвал</span></div>
+              <div class="sk-offline" data-offline hidden><strong>Нет свежего изображения</strong><span>Количество техники неизвестно</span></div>
+            </div>
+            <div class="sk-caption"><span data-field="samples">720 из 900 выборок</span> · <span data-field="limitation">Вывод ограничен наблюдаемым интервалом</span></div>
+          </section>
+          <section class="sk-panel sk-assessment" aria-label="Результат сопоставления">
+            <span class="sk-status" data-field="badge" data-status="potential_mismatch">Требуется проверка</span>
+            <h2 data-field="headline">Ожидаемый ресурс не наблюдается</h2>
+            <p class="sk-explanation" data-field="explanation"></p>
+            <div><div class="sk-meta">По плану · <span data-field="workTitle">Выемка грунта</span></div><p data-field="expected">Экскаватор + самосвал</p></div>
+            <div class="sk-resource-row"><span data-field="machineLabel">Экскаватор</span><span class="sk-count" data-field="machineCount">1</span></div>
+            <div class="sk-resource-row"><span data-field="resourceLabel">Самосвал</span><span class="sk-count" data-field="resourceCount">0</span></div>
+            <div class="sk-meta">Количество на выбранном кадре, не за смену.</div>
+            <button type="button" class="sk-action" data-action="review">Отметить как проверенное</button>
+            <span class="sk-meta" data-field="reviewNote" aria-live="polite">Действие сохранится только в этом демо.</span>
+          </section>
+        </div>
+        <section class="sk-panel sk-timeline">
+          <div class="sk-timelinehead"><h2>Ожидание и наблюдение</h2><span class="sk-meta" data-field="timelineMode">Текущее окно · 15 минут</span></div>
+          <div class="sk-lane"><span></span><div class="sk-axis"><span>09:00</span><span>09:05</span><span>09:10</span><span>09:15</span></div></div>
+          <div class="sk-lane"><span>Ресурс по плану</span><div class="sk-track" data-track="plan"></div></div>
+          <div class="sk-lane"><span>В наблюдениях</span><div class="sk-track" data-track="observed"></div></div>
+          <div class="sk-legend"><span>Наблюдается</span><span class="sk-legendwarn">Не обнаружен</span><span class="sk-legendgap">Нет наблюдения</span></div>
+          <div class="sk-meta" data-field="duration" style="margin-top:10px">Наблюдаемая длительность не равна производительному времени.</div>
+        </section>
+      </div>
+      <section data-panel="plan" hidden>
+        <h2>Утверждённый план · демо-версия 3</h2>
+        <div class="sk-worklist">
+          <article class="sk-panel sk-work"><div><h3>Выемка грунта · Котлован А</h3><p>09:00–12:00 · экскаватор + самосвал</p><p>Требование к ресурсам согласуется экспертом.</p></div><button type="button" data-work="earth">Проверить наблюдения</button></article>
+          <article class="sk-panel sk-work"><div><h3>Бетонирование · Секция Б</h3><p>09:00–11:00 · автобетоносмеситель</p><p>Работы могут выполняться параллельно.</p></div><button type="button" data-work="concrete">Проверить наблюдения</button></article>
+        </div>
+      </section>
+      <section data-panel="reviews" hidden><h2>Журнал проверок</h2><ul class="sk-panel sk-reviewlist" data-review-list><li>Проверок пока нет.<small>Отметки локальные; после перезагрузки сбрасываются.</small></li></ul></section>
+      <footer class="sk-footer"><span data-field="lineage">План v3 · геометрия v1 · демо-правило RES-EARTH-01</span><span>Нет подключения к камерам или CV-модели</span></footer>
+      <div data-announcement aria-live="polite" class="sk-meta" style="margin-top:8px"></div>
+    </main>
+  </div>
+</section>
+<!-- DEMO_SCRIPT -->

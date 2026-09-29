@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "expectedRevision": "003",
+  "targetRevision": "004",
+  "baseMigrationDigest": "29823690c7aaf590a07b8712bdeac6b46e5a9d4fec921475c2b1c09992cbc945",
+  "targetMigrationDigest": "b60d3780f29af5c8f510ca3cb19f08bf502343f30ab4ebf61690920574cf14e3",
+  "migration004Sha256": "35550af0076f8ee2a76eed256db2bbb568dcd919a8c1c9442665a9591d0dd63b",
+  "minimumFreeBytes": 21474836480,
+  "writers": ["api", "worker", "monitor"]
+}

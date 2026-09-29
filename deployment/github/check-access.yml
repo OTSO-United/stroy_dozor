@@ -1,0 +1,58 @@
+# Install in the PRIVATE deployment repository. No local runner or production writes.
+name: Check delivery access
+on:
+  repository_dispatch:
+    types: [verified-main]
+  workflow_dispatch:
+    inputs:
+      sha:
+        description: Exact source SHA
+        required: true
+      runId:
+        description: Successful source main push CI run ID
+        required: true
+permissions:
+  contents: read
+jobs:
+  verify:
+    if: >-
+      github.event.repository.private == true && github.ref == 'refs/heads/main' &&
+      (github.event_name == 'workflow_dispatch' || vars.CD_ENABLED != 'true')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+      - name: Check source repository visibility before Actions permission
+        env:
+          SOURCE_READ_TOKEN: ${{ secrets.SOURCE_READ_TOKEN }}
+        run: |
+          node --input-type=module <<'NODE'
+          const response = await fetch('https://api.github.com/repos/OTSO-United/stroikontur-source', {
+            headers: {
+              Authorization: `Bearer ${process.env.SOURCE_READ_TOKEN}`,
+              Accept: 'application/vnd.github+json',
+              'X-GitHub-Api-Version': '2022-11-28',
+            },
+            signal: AbortSignal.timeout(30000),
+          });
+          if (!response.ok) throw Error(`Source repository metadata: HTTP ${response.status}; check PAT resource owner, selected repository and organization approval`);
+          console.log('Source repository is visible; the following gate checks Actions read access and the exact CI run.');
+          NODE
+      - id: gate
+        run: node scripts/cd/github-gate.mjs
+        env:
+          SOURCE_READ_TOKEN: ${{ secrets.SOURCE_READ_TOKEN }}
+      - name: Verify source checkout access at the approved SHA
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          repository: OTSO-United/stroikontur-source
+          ref: ${{ steps.gate.outputs.sha }}
+          token: ${{ secrets.SOURCE_READ_TOKEN }}
+          path: source
+          persist-credentials: false
